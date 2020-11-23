@@ -1,0 +1,3 @@
+graft 5-star
+global-exclude *.py[cod] __pycache__ *.so *.ipynb
+recursive-exclude  5-star/jupy *
