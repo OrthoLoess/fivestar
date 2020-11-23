@@ -7,19 +7,19 @@ import argparse
 import pandas as pd
 
 # Import from 5-star
-import 5-star
-from 5-star.lib import clean_data
+import fivestar
+from fivestar.lib import clean_data
 
 if __name__ == '__main__':
     usage = '%(prog)s'
-    description = '5-star_description'
+    description = 'fivestar_description'
     # https://docs.python.org/3/library/argparse.html
     # https://docs.python.org/3/howto/argparse.html
     parser = argparse.ArgumentParser(description=description, usage=usage)
     args = parser.parse_args()
     folder_source, _ = split(5-star.__file__)
     df = pd.read_csv('{}/data/data.csv.gz'.format(folder_source))
-    print('  5-star/data/data.csv.gz Loaded')
+    print('  fivestar/data/data.csv.gz Loaded')
 
     res = clean_data(df)
     res.to_csv('out.csv', index=False)
