@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 # Copyright (C) 2018 Jean Bizot <jean@styckr.io>
-""" Main lib for 5-star Project
+""" Main lib for FiveStar Project
 """
 
 from os.path import split
@@ -50,7 +50,7 @@ def clean_data(data):
 
 if __name__ == '__main__':
     # For introspections purpose to quickly get this functions on ipython
-    import 5-star
+    import fivestar
     folder_source, _ = split(5-star.__file__)
     df = pd.read_csv('{}/data/data.csv.gz'.format(folder_source))
     clean_data = clean_data(df)
