@@ -2,10 +2,10 @@
 
 # Import from standard library
 import os
-import 5-star
+import fivestar
 import pandas as pd
 # Import from our lib
-from 5-star.lib import clean_data
+from fivestar.lib import clean_data
 import pytest
 
 
