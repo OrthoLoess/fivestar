@@ -9,3 +9,7 @@ black
 yapf
 python-gitlab
 twine
+python-dotenv
+google-cloud-storage
+fsspec
+gcsfs
