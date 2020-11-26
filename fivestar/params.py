@@ -71,3 +71,12 @@ LISTINGS_COLUMNS = ['id',
              'require_guest_profile_picture',
              'require_guest_phone_verification',
              'reviews_per_month']
+
+KEY_AMENITIES = ['Free parking on premises', ['Hot tub','shared hot tub','private hot tub'],
+                        ['Gym','shared gym'], ['Pool','private pool','shared pool'],
+                        ['Kitchen','kitchenette','full kitchen',"chef's kitchen"],'Shampoo','Heating','Air conditioning',
+                        ['Washing machine','Washer','Washer / Dryer'],'Dryer','Wifi','Breakfast',
+                        'Indoor fireplace','Hangers','Iron','Hair dryer',['Dedicated workspace','laptop friendly workspace'],
+                        ['TV', 'cable tv'],['Cot',"Pack 'n Play/travel crib', 'crib"],'High chair',
+                        'Self check-in',['Smoke alarm','Smoke detector'],['Carbon monoxide alarm','carbon monoxide detector'],
+                        'Private bathroom']
