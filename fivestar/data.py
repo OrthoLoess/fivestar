@@ -24,11 +24,16 @@ def get_data(file='listings', nrows=None, local=True, optimize=False, path=None,
             usecols=LISTINGS_COLUMNS,
             )
         filename = 'listings.csv'
+    elif file == 'clusters':
+        csv_params = {}
+        filename = 'clusters.csv'
     else:
         return None
 
     if local:
-        if not path:
+        if path:
+            path = path + filename
+        else:
             path = f"{str(Path.home())}/code/OrthoLoess/fivestar/data/jan/{filename}"
         df = pd.read_csv(path, **csv_params )
     else:
