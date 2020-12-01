@@ -58,15 +58,78 @@ def clustering(data, percentiles=CLUSTER_PERCENTILES):
     cluster_df['review_scores_rating']=data['review_scores_rating']
 
     cluster_df['property_type'] = cluster_df.apply(lambda x: 'room' if x['room/apt']== 'room' else x['property_type'], axis=1)
-    #cluster_df['listing_id'] = data['id']
+    cluster_df['listing_id'] = data['id']
     cluster_df=cluster_df.drop(columns='room/apt')
-    matching_table = cluster_df.copy()
+    matching_table = cluster_df.drop(columns=['listing_id']).copy()
     matching_table = matching_table.groupby(['location','price-boroughwise','property_type']).count().reset_index().drop(columns='review_scores_rating')
     matching_table['cluster_id'] = matching_table.index
     return cluster_df, matching_table
 
 
+def user_ranking(location, price, size, rating, clusters):
+    '''Takes as input a neighborhood, a price, a listing property type, a rating and the clusters dataframe
+    returns:
+    - the listing's ranking within its cluster
+    - the cluster's average rating
+    - the cluster size
+    '''
+
+    price_c=price_cat(price,percentiles[location])
+
+    cluster = clusters[(clusters['location'] == location ) &  (clusters['price-boroughwise'] == price_c ) &\
+              (clusters['property_type'] == size )\
+            ].copy()
+    cluster['ranking'] = cluster['review_scores_rating'].rank(method='min',ascending=False)
+    cluster_average = cluster['review_scores_rating'].mean()
+    user_rank =int(cluster[cluster['review_scores_rating']== rating].iloc[0].loc['ranking'])
+    return user_rank, cluster_average, cluster.shape[0]
 
 
 
 
+def top_rated(location, price, size, clusters, top=10):
+    '''Takes as input a neighborhood, a price, a listing property type,  and the clusters dataframe
+    returns:
+    - a list with the ids of the top-rated listings in the cluster
+    '''
+
+    price_c=price_cat(price,percentiles[location])
+
+    cluster = clusters[(clusters['location'] == location ) &  (clusters['price-boroughwise'] == price_c ) &\
+              (clusters['property_type'] == size )\
+            ].copy()
+    cluster['ranking'] = cluster['review_scores_rating'].rank(method='min',ascending=False)
+
+    sorted_cluster = cluster.sort_values(by='ranking')
+
+    nrows= round(cluster.shape[0]/ top)
+
+    return sorted_cluster.iloc[:nrows].listing_id
+
+
+
+def cluster_selection(location, price, size, clusters):
+    '''Takes as input a neighborhood, a price, a listing property type,  and the clusters dataframe
+    returns:
+    - the cluster to which the listings belongs
+    '''
+    price_c=price_cat(price,percentiles[location])
+    cluster = clusters[(clusters['location'] == location ) &  (clusters['price-boroughwise'] == price_c ) &\
+              (clusters['property_type'] == size )\
+            ].copy()
+    return cluster
+
+
+def cluster_coordinates(location, price, size, clusters, listings):
+    '''Takes as input a neighborhood, a price, a listing property type, the clusters dataframe and the raw dataframe
+    returns:
+    - the geographical coordinates of all listings in the same cluster
+    '''
+    price_c=price_cat(price,percentiles[location])
+    cluster = clusters[(clusters['location'] == location ) &  (clusters['price-boroughwise'] == price_c ) &\
+              (clusters['property_type'] == size )\
+            ].copy()
+
+    indices = cluster.index.values.tolist()
+    coordinates = listings.iloc[indices][['latitude','longitude']]
+    return coordinates
