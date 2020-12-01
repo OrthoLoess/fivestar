@@ -1,0 +1,448 @@
+,location,price-boroughwise,property_type,listing_id,cluster_id
+0,Barking and Dagenham,average,room,35,0
+1,Barking and Dagenham,average,small,2,1
+2,Barking and Dagenham,cheap,room,30,2
+3,Barking and Dagenham,cheap,small,1,3
+4,Barking and Dagenham,expensive,large,8,4
+5,Barking and Dagenham,expensive,room,9,5
+6,Barking and Dagenham,expensive,small,17,6
+7,Barking and Dagenham,very_cheap,room,27,7
+8,Barking and Dagenham,very_expensive,large,28,8
+9,Barking and Dagenham,very_expensive,room,3,9
+10,Barking and Dagenham,very_expensive,small,5,10
+11,Barnet,average,large,10,11
+12,Barnet,average,room,108,12
+13,Barnet,average,small,48,13
+14,Barnet,cheap,room,203,14
+15,Barnet,cheap,small,8,15
+16,Barnet,expensive,large,52,16
+17,Barnet,expensive,room,39,17
+18,Barnet,expensive,small,74,18
+19,Barnet,very_cheap,room,118,19
+20,Barnet,very_cheap,small,1,20
+21,Barnet,very_expensive,large,140,21
+22,Barnet,very_expensive,room,8,22
+23,Barnet,very_expensive,small,18,23
+24,Bexley,average,room,18,24
+25,Bexley,cheap,room,18,25
+26,Bexley,cheap,small,1,26
+27,Bexley,expensive,large,1,27
+28,Bexley,expensive,room,16,28
+29,Bexley,expensive,small,4,29
+30,Bexley,very_cheap,room,15,30
+31,Bexley,very_expensive,large,14,31
+32,Bexley,very_expensive,room,3,32
+33,Bexley,very_expensive,small,3,33
+34,Brent,average,large,9,34
+35,Brent,average,room,146,35
+36,Brent,average,small,162,36
+37,Brent,cheap,room,313,37
+38,Brent,cheap,small,8,38
+39,Brent,expensive,large,111,39
+40,Brent,expensive,room,60,40
+41,Brent,expensive,small,139,41
+42,Brent,very_cheap,large,3,42
+43,Brent,very_cheap,room,295,43
+44,Brent,very_cheap,small,4,44
+45,Brent,very_expensive,large,248,45
+46,Brent,very_expensive,room,27,46
+47,Brent,very_expensive,small,42,47
+48,Bromley,average,large,2,48
+49,Bromley,average,room,54,49
+50,Bromley,average,small,15,50
+51,Bromley,cheap,large,1,51
+52,Bromley,cheap,room,70,52
+53,Bromley,cheap,small,3,53
+54,Bromley,expensive,large,23,54
+55,Bromley,expensive,room,24,55
+56,Bromley,expensive,small,21,56
+57,Bromley,very_cheap,room,72,57
+58,Bromley,very_expensive,large,65,58
+59,Bromley,very_expensive,room,3,59
+60,Bromley,very_expensive,small,11,60
+61,Camden,average,large,196,61
+62,Camden,average,room,89,62
+63,Camden,average,small,487,63
+64,Camden,cheap,large,44,64
+65,Camden,cheap,room,491,65
+66,Camden,cheap,small,343,66
+67,Camden,expensive,large,386,67
+68,Camden,expensive,room,46,68
+69,Camden,expensive,small,414,69
+70,Camden,very_cheap,large,5,70
+71,Camden,very_cheap,room,691,71
+72,Camden,very_cheap,small,27,72
+73,Camden,very_expensive,large,649,73
+74,Camden,very_expensive,room,50,74
+75,Camden,very_expensive,small,132,75
+76,City of London,average,large,3,76
+77,City of London,average,room,2,77
+78,City of London,average,small,39,78
+79,City of London,cheap,large,8,79
+80,City of London,cheap,room,4,80
+81,City of London,cheap,small,41,81
+82,City of London,expensive,large,18,82
+83,City of London,expensive,room,10,83
+84,City of London,expensive,small,28,84
+85,City of London,very_cheap,large,4,85
+86,City of London,very_cheap,room,20,86
+87,City of London,very_cheap,small,21,87
+88,City of London,very_expensive,large,29,88
+89,City of London,very_expensive,room,1,89
+90,City of London,very_expensive,small,22,90
+91,Croydon,average,large,3,91
+92,Croydon,average,room,88,92
+93,Croydon,average,small,24,93
+94,Croydon,cheap,large,2,94
+95,Croydon,cheap,room,132,95
+96,Croydon,cheap,small,4,96
+97,Croydon,expensive,large,26,97
+98,Croydon,expensive,room,24,98
+99,Croydon,expensive,small,78,99
+100,Croydon,very_cheap,room,85,100
+101,Croydon,very_expensive,large,97,101
+102,Croydon,very_expensive,room,10,102
+103,Croydon,very_expensive,small,25,103
+104,Ealing,average,large,1,104
+105,Ealing,average,room,142,105
+106,Ealing,average,small,34,106
+107,Ealing,cheap,large,3,107
+108,Ealing,cheap,room,199,108
+109,Ealing,cheap,small,6,109
+110,Ealing,expensive,large,52,110
+111,Ealing,expensive,room,62,111
+112,Ealing,expensive,small,108,112
+113,Ealing,very_cheap,large,1,113
+114,Ealing,very_cheap,room,193,114
+115,Ealing,very_cheap,small,1,115
+116,Ealing,very_expensive,large,164,116
+117,Ealing,very_expensive,room,10,117
+118,Ealing,very_expensive,small,37,118
+119,Enfield,average,large,2,119
+120,Enfield,average,room,62,120
+121,Enfield,average,small,15,121
+122,Enfield,cheap,room,55,122
+123,Enfield,cheap,small,2,123
+124,Enfield,expensive,large,22,124
+125,Enfield,expensive,room,19,125
+126,Enfield,expensive,small,21,126
+127,Enfield,very_cheap,room,67,127
+128,Enfield,very_cheap,small,2,128
+129,Enfield,very_expensive,large,45,129
+130,Enfield,very_expensive,room,16,130
+131,Enfield,very_expensive,small,17,131
+132,Greenwich,average,large,34,132
+133,Greenwich,average,room,90,133
+134,Greenwich,average,small,71,134
+135,Greenwich,cheap,large,1,135
+136,Greenwich,cheap,room,161,136
+137,Greenwich,cheap,small,14,137
+138,Greenwich,expensive,large,106,138
+139,Greenwich,expensive,room,18,139
+140,Greenwich,expensive,small,70,140
+141,Greenwich,very_cheap,large,3,141
+142,Greenwich,very_cheap,room,191,142
+143,Greenwich,very_cheap,small,1,143
+144,Greenwich,very_expensive,large,184,144
+145,Greenwich,very_expensive,room,7,145
+146,Greenwich,very_expensive,small,24,146
+147,Hackney,average,large,144,147
+148,Hackney,average,room,111,148
+149,Hackney,average,small,492,149
+150,Hackney,cheap,large,29,150
+151,Hackney,cheap,room,555,151
+152,Hackney,cheap,small,156,152
+153,Hackney,expensive,large,272,153
+154,Hackney,expensive,room,27,154
+155,Hackney,expensive,small,306,155
+156,Hackney,very_cheap,large,7,156
+157,Hackney,very_cheap,room,709,157
+158,Hackney,very_cheap,small,9,158
+159,Hackney,very_expensive,large,641,159
+160,Hackney,very_expensive,room,28,160
+161,Hackney,very_expensive,small,206,161
+162,Hammersmith and Fulham,average,large,87,162
+163,Hammersmith and Fulham,average,room,58,163
+164,Hammersmith and Fulham,average,small,292,164
+165,Hammersmith and Fulham,cheap,large,26,165
+166,Hammersmith and Fulham,cheap,room,304,166
+167,Hammersmith and Fulham,cheap,small,185,167
+168,Hammersmith and Fulham,expensive,large,309,168
+169,Hammersmith and Fulham,expensive,room,54,169
+170,Hammersmith and Fulham,expensive,small,267,170
+171,Hammersmith and Fulham,very_cheap,large,1,171
+172,Hammersmith and Fulham,very_cheap,room,503,172
+173,Hammersmith and Fulham,very_cheap,small,13,173
+174,Hammersmith and Fulham,very_expensive,large,453,174
+175,Hammersmith and Fulham,very_expensive,room,24,175
+176,Hammersmith and Fulham,very_expensive,small,51,176
+177,Haringey,average,large,25,177
+178,Haringey,average,room,129,178
+179,Haringey,average,small,110,179
+180,Haringey,cheap,large,3,180
+181,Haringey,cheap,room,231,181
+182,Haringey,cheap,small,14,182
+183,Haringey,expensive,large,108,183
+184,Haringey,expensive,room,27,184
+185,Haringey,expensive,small,126,185
+186,Haringey,very_cheap,room,242,186
+187,Haringey,very_cheap,small,2,187
+188,Haringey,very_expensive,large,183,188
+189,Haringey,very_expensive,room,13,189
+190,Haringey,very_expensive,small,58,190
+191,Harrow,average,large,2,191
+192,Harrow,average,room,46,192
+193,Harrow,average,small,7,193
+194,Harrow,cheap,room,45,194
+195,Harrow,expensive,large,13,195
+196,Harrow,expensive,room,10,196
+197,Harrow,expensive,small,27,197
+198,Harrow,very_cheap,room,48,198
+199,Harrow,very_expensive,large,30,199
+200,Harrow,very_expensive,room,3,200
+201,Harrow,very_expensive,small,18,201
+202,Havering,average,room,18,202
+203,Havering,average,small,2,203
+204,Havering,cheap,room,29,204
+205,Havering,expensive,large,4,205
+206,Havering,expensive,room,13,206
+207,Havering,expensive,small,7,207
+208,Havering,very_cheap,room,18,208
+209,Havering,very_expensive,large,22,209
+210,Havering,very_expensive,room,2,210
+211,Havering,very_expensive,small,3,211
+212,Hillingdon,average,room,57,212
+213,Hillingdon,average,small,3,213
+214,Hillingdon,cheap,room,67,214
+215,Hillingdon,cheap,small,2,215
+216,Hillingdon,expensive,large,12,216
+217,Hillingdon,expensive,room,46,217
+218,Hillingdon,expensive,small,29,218
+219,Hillingdon,very_cheap,room,63,219
+220,Hillingdon,very_cheap,small,1,220
+221,Hillingdon,very_expensive,large,45,221
+222,Hillingdon,very_expensive,room,9,222
+223,Hillingdon,very_expensive,small,23,223
+224,Hounslow,average,large,5,224
+225,Hounslow,average,room,102,225
+226,Hounslow,average,small,37,226
+227,Hounslow,cheap,room,86,227
+228,Hounslow,cheap,small,3,228
+229,Hounslow,expensive,large,32,229
+230,Hounslow,expensive,room,17,230
+231,Hounslow,expensive,small,71,231
+232,Hounslow,very_cheap,large,2,232
+233,Hounslow,very_cheap,room,116,233
+234,Hounslow,very_expensive,large,96,234
+235,Hounslow,very_expensive,room,11,235
+236,Hounslow,very_expensive,small,12,236
+237,Islington,average,large,95,237
+238,Islington,average,room,80,238
+239,Islington,average,small,390,239
+240,Islington,cheap,large,36,240
+241,Islington,cheap,room,419,241
+242,Islington,cheap,small,244,242
+243,Islington,expensive,large,280,243
+244,Islington,expensive,room,40,244
+245,Islington,expensive,small,391,245
+246,Islington,very_cheap,large,3,246
+247,Islington,very_cheap,room,522,247
+248,Islington,very_cheap,small,13,248
+249,Islington,very_expensive,large,461,249
+250,Islington,very_expensive,room,37,250
+251,Islington,very_expensive,small,142,251
+252,Kensington and Chelsea,average,large,175,252
+253,Kensington and Chelsea,average,room,64,253
+254,Kensington and Chelsea,average,small,383,254
+255,Kensington and Chelsea,cheap,large,90,255
+256,Kensington and Chelsea,cheap,room,90,256
+257,Kensington and Chelsea,cheap,small,537,257
+258,Kensington and Chelsea,expensive,large,445,258
+259,Kensington and Chelsea,expensive,room,73,259
+260,Kensington and Chelsea,expensive,small,273,260
+261,Kensington and Chelsea,very_cheap,large,16,261
+262,Kensington and Chelsea,very_cheap,room,452,262
+263,Kensington and Chelsea,very_cheap,small,234,263
+264,Kensington and Chelsea,very_expensive,large,630,264
+265,Kensington and Chelsea,very_expensive,room,30,265
+266,Kensington and Chelsea,very_expensive,small,61,266
+267,Kingston upon Thames,average,large,2,267
+268,Kingston upon Thames,average,room,45,268
+269,Kingston upon Thames,average,small,16,269
+270,Kingston upon Thames,cheap,room,64,270
+271,Kingston upon Thames,cheap,small,2,271
+272,Kingston upon Thames,expensive,large,22,272
+273,Kingston upon Thames,expensive,room,18,273
+274,Kingston upon Thames,expensive,small,32,274
+275,Kingston upon Thames,very_cheap,room,55,275
+276,Kingston upon Thames,very_expensive,large,52,276
+277,Kingston upon Thames,very_expensive,room,6,277
+278,Kingston upon Thames,very_expensive,small,7,278
+279,Lambeth,average,large,85,279
+280,Lambeth,average,room,253,280
+281,Lambeth,average,small,265,281
+282,Lambeth,cheap,large,17,282
+283,Lambeth,cheap,room,601,283
+284,Lambeth,cheap,small,72,284
+285,Lambeth,expensive,large,272,285
+286,Lambeth,expensive,room,78,286
+287,Lambeth,expensive,small,329,287
+288,Lambeth,very_cheap,large,5,288
+289,Lambeth,very_cheap,room,537,289
+290,Lambeth,very_cheap,small,6,290
+291,Lambeth,very_expensive,large,504,291
+292,Lambeth,very_expensive,room,23,292
+293,Lambeth,very_expensive,small,113,293
+294,Lewisham,average,large,8,294
+295,Lewisham,average,room,185,295
+296,Lewisham,average,small,93,296
+297,Lewisham,cheap,large,3,297
+298,Lewisham,cheap,room,235,298
+299,Lewisham,cheap,small,8,299
+300,Lewisham,expensive,large,93,300
+301,Lewisham,expensive,room,40,301
+302,Lewisham,expensive,small,149,302
+303,Lewisham,very_cheap,large,1,303
+304,Lewisham,very_cheap,room,242,304
+305,Lewisham,very_cheap,small,1,305
+306,Lewisham,very_expensive,large,224,306
+307,Lewisham,very_expensive,room,18,307
+308,Lewisham,very_expensive,small,46,308
+309,Merton,average,large,8,309
+310,Merton,average,room,96,310
+311,Merton,average,small,30,311
+312,Merton,cheap,large,3,312
+313,Merton,cheap,room,136,313
+314,Merton,cheap,small,10,314
+315,Merton,expensive,large,60,315
+316,Merton,expensive,room,29,316
+317,Merton,expensive,small,62,317
+318,Merton,very_cheap,room,141,318
+319,Merton,very_cheap,small,1,319
+320,Merton,very_expensive,large,128,320
+321,Merton,very_expensive,room,7,321
+322,Merton,very_expensive,small,20,322
+323,Newham,average,large,13,323
+324,Newham,average,room,150,324
+325,Newham,average,small,49,325
+326,Newham,cheap,room,223,326
+327,Newham,cheap,small,4,327
+328,Newham,expensive,large,98,328
+329,Newham,expensive,room,46,329
+330,Newham,expensive,small,108,330
+331,Newham,very_cheap,room,228,331
+332,Newham,very_cheap,small,1,332
+333,Newham,very_expensive,large,176,333
+334,Newham,very_expensive,room,21,334
+335,Newham,very_expensive,small,34,335
+336,Redbridge,average,large,1,336
+337,Redbridge,average,room,66,337
+338,Redbridge,average,small,9,338
+339,Redbridge,cheap,room,88,339
+340,Redbridge,expensive,large,6,340
+341,Redbridge,expensive,room,41,341
+342,Redbridge,expensive,small,23,342
+343,Redbridge,very_cheap,room,58,343
+344,Redbridge,very_cheap,small,1,344
+345,Redbridge,very_expensive,large,49,345
+346,Redbridge,very_expensive,room,7,346
+347,Redbridge,very_expensive,small,24,347
+348,Richmond upon Thames,average,large,23,348
+349,Richmond upon Thames,average,room,65,349
+350,Richmond upon Thames,average,small,70,350
+351,Richmond upon Thames,cheap,large,2,351
+352,Richmond upon Thames,cheap,room,122,352
+353,Richmond upon Thames,cheap,small,12,353
+354,Richmond upon Thames,expensive,large,75,354
+355,Richmond upon Thames,expensive,room,21,355
+356,Richmond upon Thames,expensive,small,43,356
+357,Richmond upon Thames,very_cheap,room,127,357
+358,Richmond upon Thames,very_expensive,large,129,358
+359,Richmond upon Thames,very_expensive,room,3,359
+360,Richmond upon Thames,very_expensive,small,11,360
+361,Southwark,average,large,122,361
+362,Southwark,average,room,197,362
+363,Southwark,average,small,348,363
+364,Southwark,cheap,large,7,364
+365,Southwark,cheap,room,495,365
+366,Southwark,cheap,small,88,366
+367,Southwark,expensive,large,315,367
+368,Southwark,expensive,room,49,368
+369,Southwark,expensive,small,284,369
+370,Southwark,very_cheap,large,3,370
+371,Southwark,very_cheap,room,616,371
+372,Southwark,very_cheap,small,12,372
+373,Southwark,very_expensive,large,490,373
+374,Southwark,very_expensive,room,28,374
+375,Southwark,very_expensive,small,119,375
+376,Sutton,average,large,1,376
+377,Sutton,average,room,29,377
+378,Sutton,average,small,3,378
+379,Sutton,cheap,room,26,379
+380,Sutton,expensive,large,8,380
+381,Sutton,expensive,room,13,381
+382,Sutton,expensive,small,17,382
+383,Sutton,very_cheap,room,30,383
+384,Sutton,very_cheap,small,1,384
+385,Sutton,very_expensive,large,20,385
+386,Sutton,very_expensive,room,2,386
+387,Sutton,very_expensive,small,10,387
+388,Tower Hamlets,average,large,122,388
+389,Tower Hamlets,average,room,344,389
+390,Tower Hamlets,average,small,586,390
+391,Tower Hamlets,cheap,large,11,391
+392,Tower Hamlets,cheap,room,1001,392
+393,Tower Hamlets,cheap,small,54,393
+394,Tower Hamlets,expensive,large,407,394
+395,Tower Hamlets,expensive,room,81,395
+396,Tower Hamlets,expensive,small,557,396
+397,Tower Hamlets,very_cheap,large,3,397
+398,Tower Hamlets,very_cheap,room,992,398
+399,Tower Hamlets,very_cheap,small,10,399
+400,Tower Hamlets,very_expensive,large,734,400
+401,Tower Hamlets,very_expensive,room,84,401
+402,Tower Hamlets,very_expensive,small,228,402
+403,Waltham Forest,average,large,9,403
+404,Waltham Forest,average,room,63,404
+405,Waltham Forest,average,small,61,405
+406,Waltham Forest,cheap,large,1,406
+407,Waltham Forest,cheap,room,170,407
+408,Waltham Forest,cheap,small,6,408
+409,Waltham Forest,expensive,large,90,409
+410,Waltham Forest,expensive,room,20,410
+411,Waltham Forest,expensive,small,86,411
+412,Waltham Forest,very_cheap,large,1,412
+413,Waltham Forest,very_cheap,room,158,413
+414,Waltham Forest,very_expensive,large,146,414
+415,Waltham Forest,very_expensive,room,12,415
+416,Waltham Forest,very_expensive,small,16,416
+417,Wandsworth,average,large,95,417
+418,Wandsworth,average,room,149,418
+419,Wandsworth,average,small,233,419
+420,Wandsworth,cheap,large,13,420
+421,Wandsworth,cheap,room,402,421
+422,Wandsworth,cheap,small,82,422
+423,Wandsworth,expensive,large,300,423
+424,Wandsworth,expensive,room,59,424
+425,Wandsworth,expensive,small,150,425
+426,Wandsworth,very_cheap,large,3,426
+427,Wandsworth,very_cheap,room,475,427
+428,Wandsworth,very_cheap,small,8,428
+429,Wandsworth,very_expensive,large,424,429
+430,Wandsworth,very_expensive,room,17,430
+431,Wandsworth,very_expensive,small,63,431
+432,Westminster,average,large,334,432
+433,Westminster,average,room,94,433
+434,Westminster,average,small,718,434
+435,Westminster,cheap,large,156,435
+436,Westminster,cheap,room,378,436
+437,Westminster,cheap,small,788,437
+438,Westminster,expensive,large,730,438
+439,Westminster,expensive,room,70,439
+440,Westminster,expensive,small,547,440
+441,Westminster,very_cheap,large,21,441
+442,Westminster,very_cheap,room,970,442
+443,Westminster,very_cheap,small,164,443
+444,Westminster,very_expensive,large,1039,444
+445,Westminster,very_expensive,room,53,445
+446,Westminster,very_expensive,small,163,446

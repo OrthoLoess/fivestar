@@ -11,3 +11,5 @@ groupama/data/base_pno.*
 .idea/
 data/*
 !data/.keep
+.env
+star-project-key.json
