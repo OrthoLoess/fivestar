@@ -2,6 +2,10 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
+from fivestar.clusters import get_cluster_coords
+from fivestar.lib import get_listing
+# from fivestar.fivestar import FiveStar
+
 # lists for select boxes (to be replaced by imported lists/params)
 borough_list = ['Hackney', 'Westminster', 'Wimbledon']
 ptype_list = ['Apartment', 'House']
@@ -56,7 +60,7 @@ with map_col_left:
     '£120 avg price/night'
 
 with map_col_right:
-    map_one = example_df2
+    map_one = get_cluster_coords(sel1, price, 'large')
     st.map(map_one)
 
 
@@ -78,6 +82,10 @@ if st.button('Yes! I want to improve'):
 # Asking for listing ID and storing as 'listing_id'
 listing_id = st.text_input('What is your listing ID?',)
 st.write('Your listing ID is', listing_id)
+
+fivestar = FiveStar()
+
+listing = fivestar.get_listing(listing_id)
 
 # display information boxes depending on cluster and listing id
 st.write('')
