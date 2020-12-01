@@ -13,3 +13,8 @@ python-dotenv
 google-cloud-storage
 fsspec
 gcsfs
+category_encoders
+mlflow
+memoized_property
+psutil
+termcolor

@@ -17,7 +17,7 @@ def get_data(file='listings', nrows=None, local=True, optimize=False, **kwargs):
     """method to get the training data (or a portion of it) from google cloud bucket"""
     if file == 'listings':
         csv_params = dict(
-            index_col='id',
+            # index_col='id',
             parse_dates = ['host_since', 'first_review', 'last_review'],
             low_memory = False,
             nrows=nrows,

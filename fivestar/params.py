@@ -72,11 +72,20 @@ LISTINGS_COLUMNS = ['id',
              'require_guest_phone_verification',
              'reviews_per_month']
 
-KEY_AMENITIES = ['Free parking on premises', ['Hot tub','shared hot tub','private hot tub'],
-                        ['Gym','shared gym'], ['Pool','private pool','shared pool'],
-                        ['Kitchen','kitchenette','full kitchen',"chef's kitchen"],'Shampoo','Heating','Air conditioning',
-                        ['Washing machine','Washer','Washer / Dryer'],'Dryer','Wifi','Breakfast',
-                        'Indoor fireplace','Hangers','Iron','Hair dryer',['Dedicated workspace','laptop friendly workspace'],
-                        ['TV', 'cable tv'],['Cot',"Pack 'n Play/travel crib', 'crib"],'High chair',
-                        'Self check-in',['Smoke alarm','Smoke detector'],['Carbon monoxide alarm','carbon monoxide detector'],
-                        'Private bathroom']
+KEY_AMENITIES = [['Free parking on premises', 'free street parking',
+                  'paid parking on premises' ,'paid parking off premises'],
+                'Dryer','Wifi','Breakfast',
+                'Indoor fireplace',
+                ['TV', 'cable tv'],
+                ['Smoke alarm','Smoke detector']]
+
+PRICES = [950760, 301518,667593,357779,578705,502623,1099876,399645,
+         578110,463806,462820,614955,972231,683987,527206,387535,
+         452272,507876,778290,2092485,573938,616126,475142,638519,
+         409477,452437,819044,641210,402121,554009,459922,818443,1718124]
+
+BOROUGHS = ['City of London', 'Barking and Dagenham', 'Barnet', 'Bexley','Brent', 'Bromley', 'Camden',
+            'Croydon', 'Ealing', 'Enfield', 'Greenwich', 'Hackney', 'Hammersmith and Fulham', 'Haringey', 'Harrow',
+            'Havering', 'Hillingdon', 'Hounslow', 'Islington', 'Kensington and Chelsea', 'Kingston upon Thames',
+            'Lambeth', 'Lewisham', 'Merton', 'Newham', 'Redbridge', 'Richmond upon Thames', 'Southwark',
+            'Sutton', 'Tower Hamlets', 'Waltham Forest', 'Wandsworth', 'Westminster']
