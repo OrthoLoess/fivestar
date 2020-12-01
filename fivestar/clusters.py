@@ -66,7 +66,7 @@ def clustering(data, percentiles=CLUSTER_PERCENTILES):
     return cluster_df, matching_table
 
 
-def user_ranking(location, price, size, listing_id, clusters):
+def user_ranking(location, price, size, listing_id, clusters, percentiles=CLUSTER_PERCENTILES):
     '''Takes as input a neighborhood, a price, a listing property type, the listing id and the clusters dataframe
     returns:
     - the listing's ranking within its cluster
@@ -87,7 +87,7 @@ def user_ranking(location, price, size, listing_id, clusters):
 
 
 
-def top_rated(location, price, size, clusters, top=10):
+def top_rated(location, price, size, clusters, top=10, percentiles=CLUSTER_PERCENTILES):
     '''Takes as input a neighborhood, a price, a listing property type,  and the clusters dataframe
     returns:
     - a list with the ids of the top-rated listings in the cluster
@@ -108,7 +108,7 @@ def top_rated(location, price, size, clusters, top=10):
 
 
 
-def cluster_selection(location, price, size, clusters):
+def cluster_selection(location, price, size, clusters, percentiles=CLUSTER_PERCENTILES):
     '''Takes as input a neighborhood, a price, a listing property type,  and the clusters dataframe
     returns:
     - the cluster to which the listings belongs
@@ -120,7 +120,7 @@ def cluster_selection(location, price, size, clusters):
     return cluster
 
 
-def cluster_coordinates(location, price, size, clusters, listings):
+def cluster_coordinates(location, price, size, clusters, listings, percentiles=CLUSTER_PERCENTILES):
     '''Takes as input a neighborhood, a price, a listing property type, the clusters dataframe and the raw dataframe
     returns:
     - the geographical coordinates of all listings in the same cluster
