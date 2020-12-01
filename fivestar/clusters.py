@@ -5,6 +5,7 @@ Functions for handling clustering
 import numpy as np
 import pandas as pd
 from fivestar.params import CLUSTER_PERCENTILES
+from fivestar.data import get_data
 
 
 def price_cat(x,pctl):
@@ -133,3 +134,16 @@ def cluster_coordinates(location, price, size, clusters, listings, percentiles=C
     indices = cluster.index.values.tolist()
     coordinates = listings.iloc[indices][['latitude','longitude']]
     return coordinates
+
+def get_cluster_coords(location, price, size):
+
+    # get clusters,listings etc
+    clusters = get_data('clusters')
+    listings = get_data('listings')
+    coordinates = cluster_coordinates(location, price, size, clusters, listings)
+
+    return coordinates
+
+
+
+

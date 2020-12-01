@@ -45,6 +45,7 @@ def get_data(file='listings', nrows=None, local=True, optimize=False, path=None,
     return df
 
 
+
 if __name__ == "__main__":
     params = dict(local=True)
 
