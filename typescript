@@ -1,0 +1,195 @@
+Script started on Mon Nov 30 12:27:44 2020
+]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar🐍 Loading 'lewagon' virtualenv
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar]2;miles@Miless-MacBook-Pro]1;..oess/fivestar]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar[0m[27m[24m[J[01;32m➜  [36mfivestar[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h[4ms[24m[4ms[4mc[24m[4ms[4mc[4mr[24m[24ms[24mc[24mr
+[0mSCREEN_NO      screen         script                                   
+[JSCRIPT         [Jscreencapture  [J[1;31mscripts[0m/       [J                          [A[A[0m[27m[24m[39Cscr[KSCREEN_NO[1m=[0m
+[7mSCREEN_NO    [0m  screen         script                                   [K
+[JSCRIPT         [Jscreencapture  [J[1;31mscripts[0m/       [J                          [A[A[0m[27m[24m[39CSCREEN_NO[1m=[0m[K
+[7mSCREEN_NO    [0m  [7mSCREEN_NO    [0m  [A[0m[27m[24m[39CSCREEN_NO[1m=[0m[KIPT[1m=[0m  [0m 
+[0mSCREEN_NO      [1B[7mSCRIPT       [0m  [A[A[0m[27m[24m[39CSCRIPT[1m=[0m[Kscreen[0m 
+[15C[7mscreen       [0m  [1BSCRIPT         [A[A[0m[27m[24m[39Cscreen[Kcapture
+[15C[0mscreen         [1B[15C[7mscreencapture[0m  [A[A[0m[27m[24m[39Cscreencapture[K[10Dipt       
+[30C[7mscript       [0m[1B[15Cscreencapture  [A[A[0m[27m[24m[39Cscript[Ks[1m/[0m
+[30C[0mscript       [1B[30C[7mscripts/     [0m[A[A[0m[27m[24m[39Cscripts[1m/[0m[K
+[J[A[47C[8D[4m[32ms[4m[32mc[4m[32mr[4m[32mi[4m[32mp[4m[32mt[4m[32ms[1m[4m[32m/[0m[24m[39m[4m[32ms[24m[39m[0m[24m[39m [?1l>[?2004l
+[J]2;scripts]1;scripts[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar/scripts]2;miles@Miless-MacBook-Pro]1;..estar/scripts]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h[32ml[39m[32ml[32ms[39m[?1l>[?2004l
+]2;ls -G]1;ls5-star-run
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar/scripts]2;miles@Miless-MacBook-Pro]1;..estar/scripts]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h[32mt[39m[1m[31mt[1m[31mo[0m[39m[1m[31mt[1m[31mo[1m[31mu[0m[39m[1m[31mu[1m[31mc[0m[39m[0m[32mt[0m[32mo[0m[32mu[0m[32mc[32mh[39m [39mt[39mo[39mu[39mc[39mh [7mfirst_app.py[27m[18D[32mt[32mo[32mu[32mc[32mh[39m [27mf[27mi[27mr[27ms[27mt[27m_[27ma[27mp[27mp[27m.[27mp[27my[?1l>[?2004l
+]2;touch first_app.py]1;touch[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar/scripts]2;miles@Miless-MacBook-Pro]1;..estar/scripts]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h[32ml[39m[32ml[32ms[39m[?1l>[?2004l
+]2;ls -G]1;ls5-star-run   first_app.py
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar/scripts]2;miles@Miless-MacBook-Pro]1;..estar/scripts]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h[1m[31mf[0m[39m[1m[31mf[1m[31mi[0m[39m[1m[31mf[1m[31mi[1m[31mr[0m[39m[0m[32mf[0m[32mi[0m[32mr[32mmwarepasswd[39m[1m [0m[0m [14D[1m[31mf[1m[31mi[1m[31mr[1m[31mm[1m[31mw[1m[31ma[1m[31mr[1m[31me[1m[31mp[1m[31ma[1m[31ms[1m[31ms[1m[31mw[0m[39m[39m [1m[31ms[0m[39m[0m[39m [1m[31ms[0m[39m[0m[39m [1m[31ma[0m[39m[0m[39m [1m[31mp[0m[39m[0m[39m [1m[31me[0m[39m[0m[39m [1m[31mr[0m[39m[0m[39m [1m[31ma[0m[39m[0m[39m [1m[31mw[0m[39m[0m[39m [1m[31mm[0m[39m[0m[39m [1m[31mr[0m[39m[0m[39m [1m[31mr[1m[31ms[0m[39m[1m[31ms[1m[31mt[0m[39m[1m[31ms[0m[39m[0m[39m [1m[31mr[0m[39m[0m[39m [1m[31mf[1m[31mi[0m[39m[0m[39m [1m[31mf[0m[39m[0m[39m [0m[39m [1m[31ms[0m[39m[0m[32ms[32mt[39m[32ms[32mt[32mt[39m[?1l>[?2004l
+]2;'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' .]1;stt[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar/scripts]2;miles@Miless-MacBook-Pro]1;..estar/scripts]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h[1m[31ms[0m[39m[0m[32ms[32mt[39m[1m[31ms[1m[31mt[1m[31mr[0m[39m[1m[31mr[1m[31me[0m[39m[1m[31me[1m[31ma[0m[39m[1m[31ma[1m[31mm[0m[39m[1m[31mm[1m[31ml[0m[39m[1m[31ml[1m[31mi[0m[39m[8D[0m[32ms[0m[32mt[0m[32mr[0m[32me[0m[32ma[0m[32mm[0m[32ml[0m[32mi[32mt[39m run [4mf[24m[4mf[4mi[24m[4mi[4mr[24m[4mr[4mst_app.py[24m[1m [0m[0m [?1l>[?2004l
+]2;streamlit run first_app.py]1;streamlit[0m
+[34m[1m  You can now view your Streamlit app in your browser.[0m
+[0m
+[34m  Local URL: [0m[1mhttp://localhost:8501[0m
+[34m  Network URL: [0m[1mhttp://192.168.63.37:8501[0m
+[0m
+London
+New York
+New York
+Paris
+^C[34m  Stopping...[0m
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar/scripts]2;miles@Miless-MacBook-Pro]1;..estar/scripts]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h[32m.[39m[4m[32m.[4m[32m.[24m[39m[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar]2;miles@Miless-MacBook-Pro]1;..oess/fivestar]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar[0m[27m[24m[J[01;32m➜  [36mfivestar[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h[32m.[39m[4m[32m.[4m[32m.[24m[39m[?1l>[?2004l
+]2;..]1;..[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess]2;miles@Miless-MacBook-Pro]1;..de/OrthoLoess]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess[0m[27m[24m[J[01;32m➜  [36mOrthoLoess[00m [K[?1h=[?2004h[4mf[24m[24m[1m[31mf[1m[31mi[0m[39m[0m[39m[4mf[0m[39m[4mi[4mv[24m[4mv[4me[24m[4m[32mf[4m[32mi[4m[32mv[4m[32me[4m[32mstar[1m[4m[32m/[0m[24m[39m[4m[32mr[24m[39m[0m[24m[39m [?1l>[?2004l
+]2;fivestar]1;fivestar[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar]2;miles@Miless-MacBook-Pro]1;..oess/fivestar]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar[0m[27m[24m[J[01;32m➜  [36mfivestar[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m [4ms[24m[24mstatus[?1l>[?2004l
+]2;git status]1;gitOn branch miles_feat_explore
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mscripts/first_app.py[m
+	[31mtypescript[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar]2;miles@Miless-MacBook-Pro]1;..oess/fivestar]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar[0m[27m[24m[J[01;32m➜  [36mfivestar[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m add [4m.[24m[?1l>[?2004l
+]2;git add .]1;git[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar]2;miles@Miless-MacBook-Pro]1;..oess/fivestar]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar[0m[27m[24m[J[01;32m➜  [36mfivestar[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m commit -m [33m"[39m[33m"[33m [39m[33m"[39m[39m [33m"[33ms[39m[33ms[33mt[39m[33mt[33mr[39m[33mr[33me[39m[33me[33ma[39m[33ma[33mm[39m[33mm[33ml[39m[33ml[33mi[39m[33mi[33ms[39m[33ms[33mt[39m[33mt[33m [39m[33mt[39m[39m [33ms[39m[39m [33mi[39m[39m [33mi[33mt[39m[33mt[33m [39m[33m [33ma[39m[33ma[33mp[39m[33mp[33mp[39m[33mp[33m [39m[33m [33mw[39m[33mw[33mo[39m[33mo[33mr[39m[33mr[33mk[39m[33mk[33mn[39m[33mn[33mg[39m[33mg[33m [39m[33mg[39m[39m [33mn[39m[39m [33mk[39m[39m [33mk[33mi[39m[33mi[33mn[39m[33mn[33mg[39m[33mg[33m [39m[33m [33mv[39m[33mv[33me[39m[33me[33mr[39m[33mr[33ms[39m [K[A[79C[33ms[33mi[39m[33mi[33mo[39m[33mi[33mo[33mn[39m[33mn[33m"[39m[?1l>[?2004l
+]2;git commit -m "streamlit app working version"]1;git[miles_feat_explore 7754f30] streamlit app working version
+ 2 files changed, 266 insertions(+)
+ create mode 100644 scripts/first_app.py
+ create mode 100644 typescript
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar]2;miles@Miless-MacBook-Pro]1;..oess/fivestar]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar[0m[27m[24m[J[01;32m➜  [36mfivestar[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m push origin miles_feat_explore[?1l>[?2004l
+]2;git push origin miles_feat_explore]1;gitEnumerating objects: 7, done.
+Counting objects:  14% (1/7)Counting objects:  28% (2/7)Counting objects:  42% (3/7)Counting objects:  57% (4/7)Counting objects:  71% (5/7)Counting objects:  85% (6/7)Counting objects: 100% (7/7)Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
+Writing objects:  20% (1/5)Writing objects:  40% (2/5)Writing objects:  60% (3/5)Writing objects:  80% (4/5)Writing objects: 100% (5/5)Writing objects: 100% (5/5), 3.78 KiB | 3.78 MiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/1)[Kremote: Resolving deltas: 100% (1/1)[Kremote: Resolving deltas: 100% (1/1), completed with 1 local object.[K
+git To github.com:OrthoLoess/fivestar.git
+   cdae428..7754f30  miles_feat_explore -> miles_feat_explore
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar]2;miles@Miless-MacBook-Pro]1;..oess/fivestar]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar^R
+git[0m[27m[24m[J[01;32m➜  [36mfivestar[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004hggi[32mg[32mi[32mt[39m [4ms[24m[24mstatus[?1l>[?2004l
+]2;git status]1;gitOn branch miles_feat_explore
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   typescript[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar]2;miles@Miless-MacBook-Pro]1;..oess/fivestar]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar[0m[27m[24m[J[01;32m➜  [36mfivestar[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m add [4mt[24m[4mt[4my[24m[4my[4mp[24m[4mp[4mescript[24m[1m [0m[0m [?1l>[?2004l
+]2;git add typescript]1;git[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar]2;miles@Miless-MacBook-Pro]1;..oess/fivestar]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar[0m[27m[24m[J[01;32m➜  [36mfivestar[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h[7mgit commit -m "streamlit app working vers[7mi[7mon"[27m[K[A[35C[27m[32mg[27m[32mi[27m[32mt[39m[27m [27mc[27mo[27mm[27mm[27mi[27mt[27m [27m-[27mm[27m [27m[33m"[27m[33ms[27m[33mt[27m[33mr[27m[33me[27m[33ma[27m[33mm[27m[33ml[27m[33mi[27m[33mt[27m[33m [27m[33ma[27m[33mp[27m[33mp[27m[33m [27m[33mw[27m[33mo[27m[33mr[27m[33mk[27m[33mi[27m[33mn[27m[33mg[27m[33m [27m[33mv[27m[33me[27m[33mr[27m[33ms[33mi[27m[33mo[27m[33mn[27m[33m"[39m[?1l>[?2004l
+]2;git commit -m "streamlit app working version"]1;git[miles_feat_explore 3ea382d] streamlit app working version
+ 1 file changed, 18 insertions(+), 1 deletion(-)
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar]2;miles@Miless-MacBook-Pro]1;..oess/fivestar]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar[0m[27m[24m[J[01;32m➜  [36mfivestar[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m push [9D[39mg[39mi[39mt[6C[7morigin miles_feat_explore[27m[34D[32mg[32mi[32mt[39m[6C[27mo[27mr[27mi[27mg[27mi[27mn[27m [27mm[27mi[27ml[27me[27ms[27m_[27mf[27me[27ma[27mt[27m_[27me[27mx[27mp[27ml[27mo[27mr[27me[?1l>[?2004l
+]2;git push origin miles_feat_explore]1;gitEnumerating objects: 5, done.
+Counting objects:  20% (1/5)Counting objects:  40% (2/5)Counting objects:  60% (3/5)Counting objects:  80% (4/5)Counting objects: 100% (5/5)Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  33% (1/3)Writing objects:  66% (2/3)Writing objects: 100% (3/3)Writing objects: 100% (3/3), 1.03 KiB | 1.03 MiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/2)[Kremote: Resolving deltas:  50% (1/2)[Kremote: Resolving deltas: 100% (2/2)[Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To github.com:OrthoLoess/fivestar.git
+   7754f30..3ea382d  miles_feat_explore -> miles_feat_explore
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar]2;miles@Miless-MacBook-Pro]1;..oess/fivestar]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar[0m[27m[24m[J[01;32m➜  [36mfivestar[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m pus ll [1m [0m[0m origin 
+[0mHEAD                 master                                  
+[Jchange-module-name   [Jmiles_feat_explore   [J                   [A[A[0m[27m[24m[39C[32mgit[39m pull origin[K[1CHEAD 
+[7mHEAD               [0m  master                                  [K
+[Jchange-module-name   [Jmiles_feat_explore   [J                   [A[A[0m[27m[24m[39C[32mgit[39m pull origin HEAD[K[1C
+[7mHEAD               [0m  [7mHEAD               [0m  [A[0m[27m[24m[39C[32mgit[39m pull origin HEAD[K[1Cchange-module-name 
+[0mHEAD                 [1B[7mchange-module-name [0m  [A[A[0m[27m[24m[39C[32mgit[39m pull origin change-module-name[K[1C[19Dmaster            [11D
+[21C[7mmaster             [0m[1Bchange-module-name   [A[A[0m[27m[24m[39C[32mgit[39m pull origin master[K[1C
+[J[A[62C[?1l>[?2004l
+[J]2;git pull origin master]1;gitwarning: Pulling without specifying how to reconcile divergent branches is
+discouraged. You can squelch this message by running one of the following
+commands sometime before your next pull:
+
+  git config pull.rebase false  # merge (the default strategy)
+  git config pull.rebase true   # rebase
+  git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override the configured default per
+invocation.
+
+remote: Enumerating objects: 51, done.[K
+remote: Counting objects:   2% (1/48)[Kremote: Counting objects:   4% (2/48)[Kremote: Counting objects:   6% (3/48)[Kremote: Counting objects:   8% (4/48)[Kremote: Counting objects:  10% (5/48)[Kremote: Counting objects:  12% (6/48)[Kremote: Counting objects:  14% (7/48)[Kremote: Counting objects:  16% (8/48)[Kremote: Counting objects:  18% (9/48)[Kremote: Counting objects:  20% (10/48)[Kremote: Counting objects:  22% (11/48)[Kremote: Counting objects:  25% (12/48)[Kremote: Counting objects:  27% (13/48)[Kremote: Counting objects:  29% (14/48)[Kremote: Counting objects:  31% (15/48)[Kremote: Counting objects:  33% (16/48)[Kremote: Counting objects:  35% (17/48)[Kremote: Counting objects:  37% (18/48)[Kremote: Counting objects:  39% (19/48)[Kremote: Counting objects:  41% (20/48)[Kremote: Counting objects:  43% (21/48)[Kremote: Counting objects:  45% (22/48)[Kremote: Counting objects:  47% (23/48)[Kremote: Counting objects:  50% (24/48)[Kremote: Counting objects:  52% (25/48)[Kremote: Counting objects:  54% (26/48)[Kremote: Counting objects:  56% (27/48)[Kremote: Counting objects:  58% (28/48)[Kremote: Counting objects:  60% (29/48)[Kremote: Counting objects:  62% (30/48)[Kremote: Counting objects:  64% (31/48)[Kremote: Counting objects:  66% (32/48)[Kremote: Counting objects:  68% (33/48)[Kremote: Counting objects:  70% (34/48)[Kremote: Counting objects:  72% (35/48)[Kremote: Counting objects:  75% (36/48)[Kremote: Counting objects:  77% (37/48)[Kremote: Counting objects:  79% (38/48)[Kremote: Counting objects:  81% (39/48)[Kremote: Counting objects:  83% (40/48)[Kremote: Counting objects:  85% (41/48)[Kremote: Counting objects:  87% (42/48)[Kremote: Counting objects:  89% (43/48)[Kremote: Counting objects:  91% (44/48)[Kremote: Counting objects:  93% (45/48)[Kremote: Counting objects:  95% (46/48)[Kremote: Counting objects:  97% (47/48)[Kremote: Counting objects: 100% (48/48)[Kremote: Counting objects: 100% (48/48), done.[K
+remote: Compressing objects:   2% (1/37)[Kremote: Compressing objects:   5% (2/37)[Kremote: Compressing objects:   8% (3/37)[Kremote: Compressing objects:  10% (4/37)[Kremote: Compressing objects:  13% (5/37)[Kremote: Compressing objects:  16% (6/37)[Kremote: Compressing objects:  18% (7/37)[Kremote: Compressing objects:  21% (8/37)[Kremote: Compressing objects:  24% (9/37)[Kremote: Compressing objects:  27% (10/37)[Kremote: Compressing objects:  29% (11/37)[Kremote: Compressing objects:  32% (12/37)[Kremote: Compressing objects:  35% (13/37)[Kremote: Compressing objects:  37% (14/37)[Kremote: Compressing objects:  40% (15/37)[Kremote: Compressing objects:  43% (16/37)[Kremote: Compressing objects:  45% (17/37)[Kremote: Compressing objects:  48% (18/37)[Kremote: Compressing objects:  51% (19/37)[Kremote: Compressing objects:  54% (20/37)[Kremote: Compressing objects:  56% (21/37)[Kremote: Compressing objects:  59% (22/37)[Kremote: Compressing objects:  62% (23/37)[Kremote: Compressing objects:  64% (24/37)[Kremote: Compressing objects:  67% (25/37)[Kremote: Compressing objects:  70% (26/37)[Kremote: Compressing objects:  72% (27/37)[Kremote: Compressing objects:  75% (28/37)[Kremote: Compressing objects:  78% (29/37)[Kremote: Compressing objects:  81% (30/37)[Kremote: Compressing objects:  83% (31/37)[Kremote: Compressing objects:  86% (32/37)[Kremote: Compressing objects:  89% (33/37)[Kremote: Compressing objects:  91% (34/37)[Kremote: Compressing objects:  94% (35/37)[Kremote: Compressing objects:  97% (36/37)[Kremote: Compressing objects: 100% (37/37)[Kremote: Compressing objects: 100% (37/37), done.[K
+Unpacking objects:   2% (1/41)Unpacking objects:   4% (2/41)Unpacking objects:   7% (3/41)Unpacking objects:   9% (4/41)Unpacking objects:  12% (5/41)Unpacking objects:  14% (6/41)Unpacking objects:  17% (7/41)Unpacking objects:  19% (8/41)Unpacking objects:  21% (9/41)Unpacking objects:  24% (10/41)Unpacking objects:  26% (11/41)Unpacking objects:  29% (12/41)Unpacking objects:  31% (13/41)Unpacking objects:  34% (14/41)Unpacking objects:  36% (15/41)Unpacking objects:  39% (16/41)Unpacking objects:  41% (17/41)Unpacking objects:  43% (18/41)Unpacking objects:  46% (19/41)Unpacking objects:  48% (20/41)Unpacking objects:  51% (21/41)Unpacking objects:  53% (22/41), 868.00 KiB | 1.57 MiB/sUnpacking objects:  56% (23/41), 868.00 KiB | 1.57 MiB/sUnpacking objects:  58% (24/41), 868.00 KiB | 1.57 MiB/sremote: Total 41 (delta 20), reused 23 (delta 4), pack-reused 0[K
+Unpacking objects:  60% (25/41), 868.00 KiB | 1.57 MiB/sUnpacking objects:  63% (26/41), 868.00 KiB | 1.57 MiB/sUnpacking objects:  65% (27/41), 868.00 KiB | 1.57 MiB/sUnpacking objects:  68% (28/41), 868.00 KiB | 1.57 MiB/sUnpacking objects:  70% (29/41), 868.00 KiB | 1.57 MiB/sUnpacking objects:  73% (30/41), 868.00 KiB | 1.57 MiB/sUnpacking objects:  75% (31/41), 868.00 KiB | 1.57 MiB/sUnpacking objects:  78% (32/41), 868.00 KiB | 1.57 MiB/sUnpacking objects:  80% (33/41), 868.00 KiB | 1.57 MiB/sUnpacking objects:  82% (34/41), 868.00 KiB | 1.57 MiB/sUnpacking objects:  85% (35/41), 868.00 KiB | 1.57 MiB/sUnpacking objects:  87% (36/41), 868.00 KiB | 1.57 MiB/sUnpacking objects:  90% (37/41), 868.00 KiB | 1.57 MiB/sUnpacking objects:  92% (38/41), 868.00 KiB | 1.57 MiB/sUnpacking objects:  95% (39/41), 868.00 KiB | 1.57 MiB/sUnpacking objects:  97% (40/41), 868.00 KiB | 1.57 MiB/sUnpacking objects: 100% (41/41), 868.00 KiB | 1.57 MiB/sUnpacking objects: 100% (41/41), 1.47 MiB | 1.72 MiB/s, done.
+From github.com:OrthoLoess/fivestar
+ * branch            master     -> FETCH_HEAD
+   055f8a4..5604036  master     -> origin/master
+hint: Waiting for your editor to close the file... [KMerge made by the 'recursive' strategy.
+ .env.example                                   |     0
+ .gitignore                                     |     2 [32m+[m
+ {5-star => fivestar}/__init__.py               |     5 [32m+[m
+ fivestar/data.py                               |    42 [32m+[m
+ {5-star => fivestar}/data/data.csv.gz          |   Bin
+ {5-star => fivestar}/lib.py                    |     4 [32m+[m[31m-[m
+ fivestar/params.py                             |    73 [32m+[m
+ notebooks/Leone_clustering.ipynb               | 22640 [32m++++++++++[m
+ notebooks/Leone_clustering_refined.ipynb       | 15892 [32m+++++++[m
+ notebooks/Leone_exploratory_analysis.ipynb     |  2518 [32m++[m
+ notebooks/Leone_new_exploratory_analysis.ipynb |  1406 [32m+[m
+ notebooks/clusters.csv                         | 51749 [32m+++++++++++++++++++++++[m
+ notebooks/clusters_table.csv                   |   448 [32m+[m
+ notebooks/ed-exploration.ipynb                 |  2764 [32m++[m
+ requirements.txt                               |     4 [32m+[m
+ scripts/{5-star-run => fivestar-run}           |     8 [32m+[m[31m-[m
+ setup.py                                       |     5 [32m+[m[31m-[m
+ tests/lib_test.py                              |     6 [32m+[m[31m-[m
+ 18 files changed, 97555 insertions(+), 11 deletions(-)
+ create mode 100644 .env.example
+ rename {5-star => fivestar}/__init__.py (60%)
+ create mode 100644 fivestar/data.py
+ rename {5-star => fivestar}/data/data.csv.gz (100%)
+ rename {5-star => fivestar}/lib.py (97%)
+ create mode 100644 fivestar/params.py
+ create mode 100644 notebooks/Leone_clustering.ipynb
+ create mode 100644 notebooks/Leone_clustering_refined.ipynb
+ create mode 100644 notebooks/Leone_exploratory_analysis.ipynb
+ create mode 100644 notebooks/Leone_new_exploratory_analysis.ipynb
+ create mode 100644 notebooks/clusters.csv
+ create mode 100644 notebooks/clusters_table.csv
+ create mode 100644 notebooks/ed-exploration.ipynb
+ rename scripts/{5-star-run => fivestar-run} (82%)
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar]2;miles@Miless-MacBook-Pro]1;..oess/fivestar]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar[0m[27m[24m[J[01;32m➜  [36mfivestar[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m [4ms[24m[24mstatus[?1l>[?2004l
+]2;git status]1;gitOn branch miles_feat_explore
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mdeleted:    scripts/first_app.py[m
+	[31mmodified:   typescript[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mfivestar/first_app.py[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar]2;miles@Miless-MacBook-Pro]1;..oess/fivestar]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar[0m[27m[24m[J[01;32m➜  [36mfivestar[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m add [8D[39mg[39mi[39mt[5C[7mfivestar/first_app.py[27m[29D[32mg[32mi[32mt[39m[5C[27m[4mf[27m[4mi[27m[4mv[27m[4me[27m[4ms[27m[4mt[27m[4ma[27m[4mr[27m[4m/[27m[4mf[27m[4mi[27m[4mr[27m[4ms[27m[4mt[27m[4m_[27m[4ma[27m[4mp[27m[4mp[27m[4m.[27m[4mp[27m[4my[24m[?1l>[?2004l
+]2;git add fivestar/first_app.py]1;git[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar]2;miles@Miless-MacBook-Pro]1;..oess/fivestar]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar[0m[27m[24m[J[01;32m➜  [36mfivestar[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m add [4mt[24m[4mt[4my[24m[4my[4mpescript[24m[1m [0m[0m [?1l>[?2004l
+]2;git add typescript]1;git[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar]2;miles@Miless-MacBook-Pro]1;..oess/fivestar]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar[0m[27m[24m[J[01;32m➜  [36mfivestar[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m commit -m [33m"[39m[33m"[33m [39m[33m"[39m[39m [33m"[33mu[39m[33mu[33mp[39m[33mp[33md[39m[33md[33ma[39m[33ma[33mt[39m[33mt[33me[39m[33me[33md[39m[33md[33m [39m[33m [33ms[39m[33ms[33mt[39m[33mt[33mr[39m[33mr[33me[39m[33me[33ma[39m[33ma[33mm[39m[33mm[33ml[39m[33ml[33mi[39m[33mi[33mt[39m[33mt[33m [39m[33m [33ma[39m[33ma[33mp[39m[33mp[33mp[39m[33mp[33m"[39m[?1l>[?2004l
+]2;git commit -m "updated streamlit app"]1;git[miles_feat_explore 7d54908] updated streamlit app
+ 2 files changed, 345 insertions(+), 1 deletion(-)
+ create mode 100644 fivestar/first_app.py
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar]2;miles@Miless-MacBook-Pro]1;..oess/fivestar]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar[0m[27m[24m[J[01;32m➜  [36mfivestar[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m push origin miles_feat_explore[?1l>[?2004l
+]2;git push origin miles_feat_explore]1;gitEnumerating objects: 16, done.
+Counting objects:   6% (1/16)Counting objects:  12% (2/16)Counting objects:  18% (3/16)Counting objects:  25% (4/16)Counting objects:  31% (5/16)Counting objects:  37% (6/16)Counting objects:  43% (7/16)Counting objects:  50% (8/16)Counting objects:  56% (9/16)Counting objects:  62% (10/16)Counting objects:  68% (11/16)Counting objects:  75% (12/16)Counting objects:  81% (13/16)Counting objects:  87% (14/16)Counting objects:  93% (15/16)Counting objects: 100% (16/16)Counting objects: 100% (16/16), done.
+Delta compression using up to 4 threads
+Compressing objects:  12% (1/8)Compressing objects:  25% (2/8)Compressing objects:  37% (3/8)Compressing objects:  50% (4/8)Compressing objects:  62% (5/8)Compressing objects:  75% (6/8)Compressing objects:  87% (7/8)Compressing objects: 100% (8/8)Compressing objects: 100% (8/8), done.
+Writing objects:  12% (1/8)Writing objects:  25% (2/8)Writing objects:  37% (3/8)Writing objects:  50% (4/8)Writing objects:  62% (5/8)Writing objects:  75% (6/8)Writing objects:  87% (7/8)Writing objects: 100% (8/8)Writing objects: 100% (8/8), 5.39 KiB | 1.80 MiB/s, done.
+Total 8 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/4)[Kremote: Resolving deltas:  50% (2/4)[Kremote: Resolving deltas:  75% (3/4)[Kremote: Resolving deltas: 100% (4/4)[Kremote: Resolving deltas: 100% (4/4), completed with 3 local objects.[K
+To github.com:OrthoLoess/fivestar.git
+   3ea382d..7d54908  miles_feat_explore -> miles_feat_explore
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar]2;miles@Miless-MacBook-Pro]1;..oess/fivestar]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar[0m[27m[24m[J[01;32m➜  [36mfivestar[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m [4ms[24m[24mstatus[?1l>[?2004l
+]2;git status]1;gitOn branch miles_feat_explore
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mdeleted:    scripts/first_app.py[m
+	[31mmodified:   typescript[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar]2;miles@Miless-MacBook-Pro]1;..oess/fivestar]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar[0m[27m[24m[J[01;32m➜  [36mfivestar[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m [4mr[24m[24mrm [4ms[24m[4ms[4mc[24m[4mc[4mr[24m[4mr[4mi[24m[4mi[4mpts[1m[4m/[0m[24m[0m[4m/[4mfi[24m[10D[24ms[24mc[24mr[24mi[24mp[24mt[24ms[24m/[24mf[24mi
+[J[0mscripts/first_app.py  [Jscripts/fivestar-run[J[A[0m[27m[24m[39C[32mgit[39m rm scripts/fi[Krst_app.py
+[J[7mscripts/first_app.py[0m  [Jscripts/fivestar-run[J[A[0m[27m[24m[39C[32mgit[39m rm scripts/first_app.py[K
+[7mscripts/first_app.py[0m  [7mscripts/first_app.py[0m  [A[0m[27m[24m[39C[32mgit[39m rm scripts/first_app.py[K[10Dvestar-run
+[22C[7mscripts/fivestar-run[0mscripts/first_app.py  [A[0m[27m[24m[39C[32mgit[39m rm scripts/fivestar-run[K[10Drst_app.py
+[7mscripts/first_app.py[0m  [22Cscripts/fivestar-run[A[0m[27m[24m[39C[32mgit[39m rm scripts/first_app.py[K
+[J[A[66C[?1l>[?2004l
+[J]2;git rm scripts/first_app.py]1;gitrm 'scripts/first_app.py'
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar]2;miles@Miless-MacBook-Pro]1;..oess/fivestar]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar[0m[27m[24m[J[01;32m➜  [36mfivestar[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h[32mg[39m[1m[31mg[1m[31mi[0m[39m[0m[32mg[0m[32mi[32mt[39m push [9D[1m[37m[45mg[1m[37m[45mi[1m[37m[45mt[39m[1m[37m[45m [1m[37m[45mp[1m[37m[45mu[1m[37m[45ms[1m[37m[45mh[1m[37m[45m [0m[39m[49morigin miles_feat_explore[34D[0m[49m[32mg[0m[49m[32mi[0m[49m[32mt[39m[0m[39m[49m [0m[39m[49mp[0m[39m[49mu[0m[39m[49ms[0m[39m[49mh[0m[39m[49m [25C[?1l>[?2004l
+]2;git push origin miles_feat_explore]1;gitEverything up-to-date
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar]2;miles@Miless-MacBook-Pro]1;..oess/fivestar]7;file://Miless-MacBook-Pro.local/Users/miles/code/OrthoLoess/fivestar[0m[27m[24m[J[01;32m➜  [36mfivestar[00m [01;34mgit:([31mmiles_feat_explore[34m) [33m✗[00m [K[?1h=[?2004h
