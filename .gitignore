@@ -13,3 +13,7 @@ data/*
 !data/.keep
 .env
 star-project-key.json
+*.egg-info/
+eggs/
+.eggs/
+*.egg

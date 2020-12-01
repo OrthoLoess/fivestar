@@ -8,13 +8,16 @@ from fivestar.params import BUCKET_NAME, BUCKET_TRAIN_DATA_PATH, PROJECT_NAME
 from fivestar.params import LISTINGS_COLUMNS
 from google.cloud import storage
 import gcsfs
+from os.path import dirname
+from pathlib import Path
+import fivestar
 
 
-def get_data(file='listings', nrows=None, local=True, optimize=False, **kwargs):
+def get_data(file='listings', nrows=None, local=True, optimize=False, path=None, **kwargs):
     """method to get the training data (or a portion of it) from google cloud bucket"""
     if file == 'listings':
         csv_params = dict(
-            index_col='id',
+            # index_col='id',
             parse_dates = ['host_since', 'first_review', 'last_review'],
             low_memory = False,
             nrows=nrows,
@@ -23,8 +26,10 @@ def get_data(file='listings', nrows=None, local=True, optimize=False, **kwargs):
         filename = 'listings.csv'
     else:
         return None
+
     if local:
-        path = f"data/jan/{filename}"
+        if not path:
+            path = f"{str(Path.home())}/code/OrthoLoess/fivestar/data/jan/{filename}"
         df = pd.read_csv(path, **csv_params )
     else:
         fs = gcsfs.GCSFileSystem(project='PROJECT_NAME', token='/Users/ed/code/fivestar/star-project-key.json')

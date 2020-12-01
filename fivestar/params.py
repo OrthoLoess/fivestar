@@ -72,6 +72,24 @@ LISTINGS_COLUMNS = ['id',
              'require_guest_phone_verification',
              'reviews_per_month']
 
+KEY_AMENITIES = [['Free parking on premises', 'free street parking',
+                  'paid parking on premises' ,'paid parking off premises'],
+                'Dryer','Wifi','Breakfast',
+                'Indoor fireplace',
+                ['TV', 'cable tv'],
+                ['Smoke alarm','Smoke detector']]
+
+PRICES = [950760, 301518,667593,357779,578705,502623,1099876,399645,
+         578110,463806,462820,614955,972231,683987,527206,387535,
+         452272,507876,778290,2092485,573938,616126,475142,638519,
+         409477,452437,819044,641210,402121,554009,459922,818443,1718124]
+
+BOROUGHS = ['City of London', 'Barking and Dagenham', 'Barnet', 'Bexley','Brent', 'Bromley', 'Camden',
+            'Croydon', 'Ealing', 'Enfield', 'Greenwich', 'Hackney', 'Hammersmith and Fulham', 'Haringey', 'Harrow',
+            'Havering', 'Hillingdon', 'Hounslow', 'Islington', 'Kensington and Chelsea', 'Kingston upon Thames',
+            'Lambeth', 'Lewisham', 'Merton', 'Newham', 'Redbridge', 'Richmond upon Thames', 'Southwark',
+            'Sutton', 'Tower Hamlets', 'Waltham Forest', 'Wandsworth', 'Westminster']
+
 CLUSTER_PERCENTILES = {'Lambeth': [33.0, 40.0, 50.0, 60.0, 70.0, 85.0, 100.0, 125.0, 165.0],
              'Islington': [40.0, 50.0, 65.0, 80.0, 90.0, 100.0, 120.0, 140.0, 180.0],
              'Kensington and Chelsea': [61.0, 85.0, 100.0, 119.0, 130.5, 150.0, 180.0, 220.0, 300.0],
@@ -106,3 +124,4 @@ CLUSTER_PERCENTILES = {'Lambeth': [33.0, 40.0, 50.0, 60.0, 70.0, 85.0, 100.0, 12
              'Bexley': [20.0, 25.0, 27.0, 30.0, 34.0, 40.0, 50.0, 70.0, 88.99999999999999],
              'Sutton': [24.9, 28.0, 31.0, 35.0, 44.5, 50.0, 56.19999999999999, 65.4, 85.0]
              }
+
