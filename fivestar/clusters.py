@@ -66,8 +66,8 @@ def clustering(data, percentiles=CLUSTER_PERCENTILES):
     return cluster_df, matching_table
 
 
-def user_ranking(location, price, size, rating, clusters):
-    '''Takes as input a neighborhood, a price, a listing property type, a rating and the clusters dataframe
+def user_ranking(location, price, size, listing_id, clusters):
+    '''Takes as input a neighborhood, a price, a listing property type, the listing id and the clusters dataframe
     returns:
     - the listing's ranking within its cluster
     - the cluster's average rating
@@ -81,7 +81,7 @@ def user_ranking(location, price, size, rating, clusters):
             ].copy()
     cluster['ranking'] = cluster['review_scores_rating'].rank(method='min',ascending=False)
     cluster_average = cluster['review_scores_rating'].mean()
-    user_rank =int(cluster[cluster['review_scores_rating']== rating].iloc[0].loc['ranking'])
+    user_rank =int(cluster[cluster['listing_id']== listing_id].iloc[0].loc['ranking'])
     return user_rank, cluster_average, cluster.shape[0]
 
 
