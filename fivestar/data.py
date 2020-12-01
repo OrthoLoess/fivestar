@@ -13,7 +13,7 @@ from pathlib import Path
 import fivestar
 
 
-def get_data(file='listings', nrows=None, local=True, optimize=False, **kwargs):
+def get_data(file='listings', nrows=None, local=True, optimize=False, path=None, **kwargs):
     """method to get the training data (or a portion of it) from google cloud bucket"""
     if file == 'listings':
         csv_params = dict(
@@ -28,7 +28,8 @@ def get_data(file='listings', nrows=None, local=True, optimize=False, **kwargs):
         return None
 
     if local:
-        path = f"{str(Path.home())}/code/fivestar/data/jan/{filename}"
+        if not path:
+            path = f"{str(Path.home())}/code/OrthoLoess/fivestar/data/jan/{filename}"
         df = pd.read_csv(path, **csv_params )
     else:
         fs = gcsfs.GCSFileSystem(project='PROJECT_NAME', token='/Users/ed/code/fivestar/star-project-key.json')
