@@ -4,7 +4,7 @@ import pandas as pd
 
 from fivestar.clusters import get_cluster_coords
 from fivestar.lib import get_listing
-# from fivestar.fivestar import FiveStar
+from fivestar.lib import FiveStar
 
 # lists for select boxes (to be replaced by imported lists/params)
 borough_list = ['Hackney', 'Westminster', 'Wimbledon']
@@ -13,6 +13,7 @@ bedrooms_list = ['studio', '1', '2', '3+']
 price_list = ['£79 or less', '£80 - £99', '£100 - £119', '£120 - £139', '£140 or above' ]
 amenities_example = ['wifi', 'toaster', 'hangers', 'parking', 'sauna', 'swimming pool']
 
+fs = FiveStar()
 
 # test dataframes
 example_df = pd.DataFrame(
@@ -97,9 +98,9 @@ if st.button('Yes! I want to improve'):
 listing_id = st.text_input('What is your listing ID?',)
 st.write('Your listing ID is', listing_id)
 
-fivestar = FiveStar()
 
-listing = fivestar.get_listing(listing_id)
+listing_data = fs.get_listing(listing_id)
+# print(listing)
 
 # display information boxes depending on cluster and listing id
 st.write('')
