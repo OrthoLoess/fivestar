@@ -18,7 +18,18 @@ class FiveStar():
 
     def get_listing(self, listing_id):
         """Look up full info for an id and return it as a dict???"""
-        data = self.listings.loc[listing_id].to_dict('records')[0]
+        # print(self.listings.shape)
+        listings = self.listings
+        # print(listings)
+        if listing_id:
+            data = listings[listings['id'] == int(listing_id)].to_dict('records')
+            if type(data) == 'list' and len(data) > 0:
+                data = data[0]
+            else:
+                data = {}
+        else:
+            data = {}
+        # print(data)
         return data
 
 
