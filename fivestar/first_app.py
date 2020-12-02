@@ -8,8 +8,8 @@ from fivestar.lib import get_listing
 
 # lists for select boxes (to be replaced by imported lists/params)
 borough_list = ['Hackney', 'Westminster', 'Wimbledon']
-ptype_list = ['Apartment', 'House']
-bedrooms_list = ['studio', 1, 2, '3+']
+ptype_list = ['Apartment', 'Room']
+bedrooms_list = ['studio', '1', '2', '3+']
 price_list = ['£79 or less', '£80 - £99', '£100 - £119', '£120 - £139', '£140 or above' ]
 amenities_example = ['wifi', 'toaster', 'hangers', 'parking', 'sauna', 'swimming pool']
 
@@ -59,8 +59,22 @@ with map_col_left:
     '5,000 listings'
     '£120 avg price/night'
 
+
+
 with map_col_right:
-    map_one = get_cluster_coords(sel1, price, 'large')
+    if sel2 == 'Apartment':
+        sel2cat='Entire home/apt'
+    else:
+        sel2cat='room'
+    if sel3 == 'studio':
+        sel3cat = 0
+    elif sel3 == '1':
+        sel3cat = 1
+    elif sel3 == '2':
+        sel3cat = 2
+    else:
+        sel3cat = 3
+    map_one = get_cluster_coords(sel1, price, sel2cat, sel3cat)
     st.map(map_one)
 
 
