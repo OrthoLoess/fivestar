@@ -1,11 +1,14 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+from wordcloud import WordCloud
+import matplotlib.pyplot as plt
 
-from fivestar.clusters import get_cluster_coords, get_cluster_ranking
+from fivestar.clusters import get_cluster_coords, get_cluster_ranking, listing_to_cluster
 from fivestar.lib import get_listing
 from fivestar.lib import FiveStar
 from fivestar.utils import str_to_price
+from fivestar.get_wordcloud import get_wordcloud
 
 
 # lists for select boxes (to be replaced by imported lists/params)
@@ -102,7 +105,9 @@ st.write('Your listing ID is', listing_id)
 listing_id = int(listing_id)
 listing_data = fs.get_listing(listing_id)
 
-
+cluster_id = listing_to_cluster(listing_id)
+#wordcount = pd.read_csv('data/jan/word_counts2.csv')
+cloud = get_wordcloud(cluster_id)
 
 
 cl_rank, cl_average = get_cluster_ranking(listing_data['neighbourhood_cleansed'],str_to_price(listing_data['price']), \
@@ -135,11 +140,10 @@ with rev_three:
     st.markdown("<h2 style='text-align: center; color: red;'>Your ranking: 20 percentile</h1>",
      unsafe_allow_html=True)
 with rev_four:
-    st.write('')
-    st.write('')
-    st.write('')
-    st.markdown("<h2 style='text-align: center; color: black;'>Great location, clean and tidy, friendly communication...</h1>",
-     unsafe_allow_html=True)
+    fig, ax = plt.subplots()
+    ax.imshow(cloud, interpolation="bilinear")
+    ax.axis("off")
+    st.pyplot(fig)
 
     # st.text_area('What makes visitors give great reviews', value='''
     #     It was the best of times, it was the worst of times, it was

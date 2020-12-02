@@ -27,6 +27,9 @@ def get_data(file='listings', nrows=None, local=True, optimize=False, path=None,
     elif file == 'clusters':
         csv_params = {}
         filename = 'clusters.csv'
+    elif file == 'wordcount':
+        csv_params = {}
+        filename = 'word_counts2.csv'
     else:
         return None
 

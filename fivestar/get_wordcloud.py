@@ -1,4 +1,9 @@
-def get_wordcloud(cluster_id, wordcounts_df):
+import pandas as pd
+from wordcloud import WordCloud
+from fivestar.data import get_data
+
+
+def get_wordcloud(cluster_id):
 
     # the dataframe wordcounts_df contains the most common 2 words associations
     # and associated counts for the clusters in label_list as well as
@@ -27,6 +32,7 @@ def get_wordcloud(cluster_id, wordcounts_df):
                 'L:Westminster_P:average_S:small',\
                 'L:Wandsworth_P:cheap_S:room']
 
+    wordcounts_df = get_data('wordcount')
     # If cluster_id not in above list, set to 'All'. The wordcloud will be based
     # on the word associations calculated across all clusters
     if cluster_id not in label_list:

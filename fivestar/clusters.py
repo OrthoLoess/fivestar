@@ -168,7 +168,8 @@ def get_cluster_coords(location, price, ptype, psize):
 
 
 
-def listing_to_cluster(listing_id, clusters):
+def listing_to_cluster(listing_id):
+    clusters = get_data('clusters')
     cluster_id = clusters[clusters['listing_id']==listing_id].iloc[0]['cluster']
 
     return cluster_id
