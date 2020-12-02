@@ -20,7 +20,13 @@ def price_cat(x,pctl):
         return 'expensive'
     return 'very_expensive'
 
-
+def property_cat(ptype, psize):
+    '''Transforms property type and size into a property cluster category'''
+    if ptype != 'Entire home/apt':
+        return 'room'
+    elif psize < 2:
+        return 'small'
+    return 'large'
 
 
 def clustering(data, percentiles=CLUSTER_PERCENTILES):
@@ -60,6 +66,8 @@ def clustering(data, percentiles=CLUSTER_PERCENTILES):
 
     cluster_df['property_type'] = cluster_df.apply(lambda x: 'room' if x['room/apt']== 'room' else x['property_type'], axis=1)
     cluster_df['listing_id'] = data['id']
+    cluster_df['lat'] = data['latitude']
+    cluster_df['lon'] = data['longitude']
     cluster_df=cluster_df.drop(columns='room/apt')
     matching_table = cluster_df.drop(columns=['listing_id']).copy()
     matching_table = matching_table.groupby(['location','price-boroughwise','property_type']).count().reset_index().drop(columns='review_scores_rating')
@@ -121,26 +129,27 @@ def cluster_selection(location, price, size, clusters, percentiles=CLUSTER_PERCE
     return cluster
 
 
-def cluster_coordinates(location, price, size, clusters, listings, percentiles=CLUSTER_PERCENTILES):
+def cluster_coordinates(location, price, ptype, psize, clusters, percentiles=CLUSTER_PERCENTILES):
     '''Takes as input a neighborhood, a price, a listing property type, the clusters dataframe and the raw dataframe
     returns:
     - the geographical coordinates of all listings in the same cluster
     '''
+    size_c = property_cat(ptype, psize)
     price_c=price_cat(price,percentiles[location])
     cluster = clusters[(clusters['location'] == location ) &  (clusters['price-boroughwise'] == price_c ) &\
-              (clusters['property_type'] == size )\
+              (clusters['property_type'] == size_c )\
             ].copy()
 
-    indices = cluster.index.values.tolist()
-    coordinates = listings.iloc[indices][['latitude','longitude']]
+    #indices = cluster.index.values.tolist()
+    coordinates = cluster[['lat','lon']]
     return coordinates
 
-def get_cluster_coords(location, price, size):
+def get_cluster_coords(location, price, ptype, psize):
 
     # get clusters,listings etc
     clusters = get_data('clusters')
-    listings = get_data('listings')
-    coordinates = cluster_coordinates(location, price, size, clusters, listings)
+    #listings = get_data('listings')
+    coordinates = cluster_coordinates(location, price, ptype, psize, clusters)
 
     return coordinates
 
