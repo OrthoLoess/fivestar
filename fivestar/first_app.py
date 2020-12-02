@@ -117,33 +117,34 @@ cl_rank, cl_average = get_cluster_ranking(listing_data['neighbourhood_cleansed']
 # display information boxes depending on cluster and listing id
 st.write('')
 st.header('How you compare (vs similar group of properties)')
-rev_one, rev_two = st.beta_columns(2)
+rev_one, rev_two, rev_three = st.beta_columns(3)
 with rev_one:
     st.write('')
     st.write('')
     st.write('')
-    st.markdown("<h2 style='text-align: center; color: blue;'>Your review score: 95.4</h1>",
+    st.markdown(f"<h2 style='text-align: center; color: #e3256b;'>Your review score: <strong>{round(listing_data['review_scores_rating']/20, 1)}</h1>",
      unsafe_allow_html=True)
 with rev_two:
     st.write('')
     st.write('')
     st.write('')
-    st.markdown("<h2 style='text-align: center; color: blue;'>Avg review score: {cl_average}</h1>",
+    st.markdown(f"<h2 style='text-align: center; color: #e3256b;'>Group review score: <strong>{round(cl_average/20, 1)}</h1>",
      unsafe_allow_html=True)
-
-
-rev_three, rev_four = st.beta_columns(2)
 with rev_three:
     st.write('')
     st.write('')
     st.write('')
-    st.markdown("<h2 style='text-align: center; color: red;'>Your ranking: 20 percentile</h1>",
+    st.markdown(f"<h2 style='text-align: center; color: #e3256b;'>You are in the bottom <strong>{abs(int(round(cl_rank*100,0))-100)}%</strong></h1>",
      unsafe_allow_html=True)
-with rev_four:
-    fig, ax = plt.subplots()
-    ax.imshow(cloud, interpolation="bilinear")
-    ax.axis("off")
-    st.pyplot(fig)
+
+st.write('')
+st.write('')
+st.header('What the top listings in your group offer')
+
+fig, ax = plt.subplots()
+ax.imshow(cloud, interpolation="bilinear")
+ax.axis("off")
+st.pyplot(fig)
 
     # st.text_area('What makes visitors give great reviews', value='''
     #     It was the best of times, it was the worst of times, it was
