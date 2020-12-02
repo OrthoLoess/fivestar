@@ -23,8 +23,10 @@ class FiveStar():
         # print(listings)
         if listing_id:
             data = listings[listings['id'] == int(listing_id)].to_dict('records')
-            if type(data) == 'list' and len(data) > 0:
+
+            if  len(data) > 0:
                 data = data[0]
+
             else:
                 data = {}
         else:
@@ -50,5 +52,8 @@ def get_listing(listing_id):
 if __name__ == '__main__':
     # For introspections purpose to quickly get this functions on ipython
     import fivestar
-
+    fs = FiveStar()
+    listing_data = fs.get_listing(53242)
+    for key, value in listing_data.items():
+        print(f"{key} is {value}")
     print(' dataframe cleaned')
