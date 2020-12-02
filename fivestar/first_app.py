@@ -2,9 +2,11 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 
-from fivestar.clusters import get_cluster_coords
+from fivestar.clusters import get_cluster_coords, get_cluster_ranking
 from fivestar.lib import get_listing
 from fivestar.lib import FiveStar
+from fivestar.utils import str_to_price
+
 
 # lists for select boxes (to be replaced by imported lists/params)
 borough_list = ['Hackney', 'Westminster', 'Wimbledon']
@@ -95,11 +97,16 @@ if st.button('Yes! I want to improve'):
     host_select = st.selectbox('',['No, I am new to hosting', 'I am a host already'])
 
 # Asking for listing ID and storing as 'listing_id'
-listing_id = st.text_input('What is your listing ID?',)
+listing_id = st.text_input('What is your listing ID?',53242)
 st.write('Your listing ID is', listing_id)
-
-
+listing_id = int(listing_id)
 listing_data = fs.get_listing(listing_id)
+
+
+
+
+cl_rank, cl_average = get_cluster_ranking(listing_data['neighbourhood_cleansed'],str_to_price(listing_data['price']), \
+    listing_data['room_type'], listing_data['bedrooms'], listing_id)
 # print(listing)
 
 # display information boxes depending on cluster and listing id
@@ -116,7 +123,7 @@ with rev_two:
     st.write('')
     st.write('')
     st.write('')
-    st.markdown("<h2 style='text-align: center; color: blue;'>Avg review score: 97.4</h1>",
+    st.markdown("<h2 style='text-align: center; color: blue;'>Avg review score: {cl_average}</h1>",
      unsafe_allow_html=True)
 
 

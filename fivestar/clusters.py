@@ -7,6 +7,11 @@ import pandas as pd
 from fivestar.params import CLUSTER_PERCENTILES
 from fivestar.data import get_data
 
+def str_to_price(strn):
+    '''The function converts a price entry from string to float and removes the $ character'''
+    if type(strn)== str:
+        return float(strn.strip('$').replace(',',''))
+    return strn
 
 def price_cat(x,pctl):
     '''Transforms an absolute price into a price category, given a list of percentiles'''
@@ -69,13 +74,11 @@ def clustering(data, percentiles=CLUSTER_PERCENTILES):
     cluster_df['lat'] = data['latitude']
     cluster_df['lon'] = data['longitude']
     cluster_df=cluster_df.drop(columns='room/apt')
-    matching_table = cluster_df.drop(columns=['listing_id']).copy()
-    matching_table = matching_table.groupby(['location','price-boroughwise','property_type']).count().reset_index().drop(columns='review_scores_rating')
-    matching_table['cluster_id'] = matching_table.index
-    return cluster_df, matching_table
+    cluster_df['cluster'] = "L:" + cluster_df['location'] + "_P:" + cluster_df['price-boroughwise'] + "_S:" + cluster_df['property_type']
+    return cluster_df
 
 
-def user_ranking(location, price, size, listing_id, clusters, percentiles=CLUSTER_PERCENTILES):
+def user_ranking(location, price, ptype, psize, listing_id, clusters, percentiles=CLUSTER_PERCENTILES):
     '''Takes as input a neighborhood, a price, a listing property type, the listing id and the clusters dataframe
     returns:
     - the listing's ranking within its cluster
@@ -84,16 +87,25 @@ def user_ranking(location, price, size, listing_id, clusters, percentiles=CLUSTE
     '''
 
     price_c=price_cat(price,percentiles[location])
+    size_c = property_cat(ptype, psize)
 
     cluster = clusters[(clusters['location'] == location ) &  (clusters['price-boroughwise'] == price_c ) &\
-              (clusters['property_type'] == size )\
-            ].copy()
-    cluster['ranking'] = cluster['review_scores_rating'].rank(method='min',ascending=False)
+              (clusters['property_type'] == size_c )\
+            ].reset_index()
+    cluster['ranking'] = cluster['review_scores_rating'].rank(method='min',ascending=False,pct=True)
     cluster_average = cluster['review_scores_rating'].mean()
-    user_rank =int(cluster[cluster['listing_id']== listing_id].iloc[0].loc['ranking'])
-    return user_rank, cluster_average, cluster.shape[0]
+    user_rank =float(cluster[cluster['listing_id']== listing_id]['ranking'])
+    return user_rank, cluster_average
 
 
+def get_cluster_ranking(location, price, ptype, psize, listing_id):
+
+    # get clusters,listings etc
+    clusters = get_data('clusters')
+    #listings = get_data('listings')
+    cl_rank, cl_average = user_ranking(location, price, ptype, psize, listing_id, clusters)
+
+    return cl_rank, cl_average
 
 
 def top_rated(location, price, size, clusters, top=10, percentiles=CLUSTER_PERCENTILES):
@@ -156,3 +168,20 @@ def get_cluster_coords(location, price, ptype, psize):
 
 
 
+def listing_to_cluster(listing_id, clusters):
+    cluster_id = clusters[clusters['listing_id']==listing_id].iloc[0]['cluster']
+
+    return cluster_id
+
+
+if __name__ == '__main__':
+    from fivestar.lib import FiveStar
+    #from fivestar.util import str_to_price
+    fs = FiveStar()
+    listing_id = 53242
+    listing_data = fs.get_listing(listing_id)
+
+    a,b =get_cluster_ranking(listing_data['neighbourhood_cleansed'],str_to_price(listing_data['price']), \
+    listing_data['room_type'], listing_data['bedrooms'], listing_id)
+    print(a)
+    print(b)
