@@ -5,7 +5,7 @@ import os
 import fivestar
 import pandas as pd
 # Import from our lib
-from fivestar.lib import clean_data
+from fivestar.lib import FiveStar
 import pytest
 
 
