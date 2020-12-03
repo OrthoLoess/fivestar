@@ -29,10 +29,10 @@ MLFLOW_URI = "https://mlflow.lewagon.co/"
 
 class Trainer(object):
     # Mlflow parameters identifying the experiment, you can add all the parameters you wish
-    ESTIMATOR = "Linear"
+    ESTIMATOR = "Ridge"
     EXPERIMENT_NAME = "FiveStar"
 
-    def __init__(self, X, y, **kwargs):
+    def __init__(self, X=None, y=None, **kwargs):
         """
         FYI:
         __init__ is called every time you instatiate Trainer
@@ -56,7 +56,7 @@ class Trainer(object):
         self.X_train = X
         self.y_train = y
         del X, y
-        self.split = self.kwargs.get("split", True)  # cf doc above
+        self.split = self.kwargs.get("split", False)  # cf doc above
         if self.split:
             self.X_train, self.X_val, self.y_train, self.y_val = train_test_split(self.X_train, self.y_train,
                                                                                   test_size=0.25,
@@ -70,7 +70,7 @@ class Trainer(object):
         if estimator == "Linear":
             model = LinearRegression()
         else:
-            model = Ridge()
+            model = Ridge(alpha=50)
         estimator_params = self.kwargs.get("estimator_params", {})
         self.mlflow_log_param("estimator", estimator)
         model.set_params(**estimator_params)
@@ -139,6 +139,12 @@ class Trainer(object):
             ('rgs', self.get_estimator())], memory=memory)
 
 
+    def predict(self, X):
+        return self.pipeline.predict(X)
+
+    def load_model(self):
+        self.pipeline = joblib.load('model.joblib')
+
     def add_grid_search(self):
         """"
         Apply Gridsearch on self.params defined in get_estimator
@@ -185,14 +191,14 @@ class Trainer(object):
         """Save the model into a .joblib and upload it on Google Storage /models folder
         HINTS : use sklearn.joblib (or jbolib) libraries and google-cloud-storage"""
         joblib.dump(self.pipeline, 'model.joblib')
-        print(colored("model.joblib saved locally", "green"))
+        # print(colored("model.joblib saved locally", "green"))
 
         # Add upload of model.joblib to storage here
-        version = self.kwargs.get('version', None)
-        if version:
-            storage_upload(model_version=version)
-        else:
-            storage_upload()
+        # version = self.kwargs.get('version', None)
+        # if version:
+        #     storage_upload(model_version=version)
+        # else:
+        #     storage_upload()
 
     ### MLFlow methods
     @memoized_property

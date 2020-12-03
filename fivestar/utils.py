@@ -3,7 +3,7 @@ import time
 from fivestar.params import BOROUGHS, PRICES
 
 def decode_amenities(df):
-    data = df
+    data = df.copy()
     def str_to_list(strn):
         row_items = strn[1:-1].split(',')
         for key,item in enumerate(row_items):
