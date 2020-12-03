@@ -6,7 +6,7 @@ from wordcloud import WordCloud
 
 from fivestar.clusters import get_cluster_coords, get_cluster_ranking, listing_to_cluster
 from fivestar.lib import FiveStar
-from fivestar.utils import str_to_price
+from fivestar.utils import str_to_price, cancel_policy
 from fivestar.get_wordcloud import get_wordcloud
 
 
@@ -197,48 +197,31 @@ with slide_col_mid:
     # st.write('')
 
     can_strict = st.select_slider(
-        'Strict cancellation policy (ie xx)',options=['No', 'Yes'])
+        'Strict cancellation policy (ie xx)',options=['No', 'Yes'], value=cancel_policy(listing_data))
     st.write('')
     #st.write('Strict cancellation policy:', can_strict)
 
     inst_book = st.select_slider(
-        'Instantly bookable (ie xx)',options=['No', 'Yes'])
+        'Instantly bookable (ie xx)',options=['No', 'Yes'], value='Yes' if listing_data['instant_bookable'] == 't' else 'No')
     st.write('')
     #st.write('Instantly bookable:', inst_book)
 
-    # host_listings_count = st.slider('No of other listings', 0, 16, 1)
-    # st.write(host_listings_count + 1, 'listings in total')
-    # st.write('')
-
-    # type_entire = st.select_slider(
-    #     'Entire flat (vs private room)',options=['No', 'Yes'])
-    # st.write('')
-
-    # parking = st.select_slider(
-    #     'Free parking on premises',options=['No', 'Yes'])
-    # st.write('')
-
     wifi = st.select_slider(
-        'Wifi available',options=['No', 'Yes'])
+        'Wifi available',options=['No', 'Yes'], value='Yes' if 'Wifi' in listing_data['amenities'] else 'No')
     st.write('')
 
     breakfast = st.select_slider(
-        'Breakfast included',options=['No', 'Yes'])
+        'Breakfast included',options=['No', 'Yes'], value='Yes' if 'Breakfast' in listing_data['amenities'] else 'No')
     st.write('')
 
-    # host_resp_rate = st.select_slider(
-    #     'Response to questions',options=['Never', 'When I can', 'As much as possible'])
-    # st.write('')
-
-    # host_identity = st.select_slider(
-    #     'Host identity verified',options=['No', 'Yes'])
-    # st.write('')
-
-    price_ratio = st.slider('Price adjustor, £', 0, 250, price)
+    price_ratio = st.slider('Price adjustor, £', 0, 250, int(str_to_price(listing_data.get('price', 20))))
     st.write('£', price_ratio, )
     st.write('')
 
-    cleanliness_delta = st.slider('Cleaning standard', 0, 10, 1)
+    cleanliness_delta = st.slider(
+        'Cleaning standard', 0, 10,
+        int(listing_data.get('review_scores_cleanliness', 9))
+        )
     st.write('Expected standard of cleanliness:', cleanliness_delta )
     st.write('')
 
@@ -254,7 +237,7 @@ values = {
     'review_scores_cleanliness': cleanliness_delta,
     'instant_bookable': inst_book,
     }
-print('These values are coming directly from streamlit:', values)
+
 new_score = fs.predict_on_new_values(listing_id, values)
 
 with slide_col_right:
