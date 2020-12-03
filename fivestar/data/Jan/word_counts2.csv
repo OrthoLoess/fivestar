@@ -1,0 +1,548 @@
+,quotes,count,cluster
+0,great location,41084,All
+1,walking distance,22722,All
+2,nice place,22021,All
+3,clean,21507,All
+4,close tube station,13206,All
+5,everything needed,10057,All
+6,great host,10054,All
+7,value money,8548,All
+8,easy access,7712,All
+9,central location,7424,All
+10,comfortable bed,5392,All
+11,apartment great,5015,All
+12,comfortable,4932,All
+13,well equipped,3990,All
+14,public transport,3869,All
+15,location near,3328,All
+16,train station,3254,All
+17,bus stop,2943,All
+18,friendly helpful,2736,All
+19,like home,2662,All
+20,feel welcome,2501,All
+21,great location,1876,L:Westminster_P:very_cheap_S:room
+22,nice place,869,L:Westminster_P:very_cheap_S:room
+23,walking distance,751,L:Westminster_P:very_cheap_S:room
+24,clean,674,L:Westminster_P:very_cheap_S:room
+25,close tube station,504,L:Westminster_P:very_cheap_S:room
+26,great host,503,L:Westminster_P:very_cheap_S:room
+27,value money,379,L:Westminster_P:very_cheap_S:room
+28,central location,276,L:Westminster_P:very_cheap_S:room
+29,everything needed,259,L:Westminster_P:very_cheap_S:room
+30,easy access,233,L:Westminster_P:very_cheap_S:room
+31,comfortable bed,214,L:Westminster_P:very_cheap_S:room
+32,victoria station,192,L:Westminster_P:very_cheap_S:room
+33,hyde park,187,L:Westminster_P:very_cheap_S:room
+34,paddington station,158,L:Westminster_P:very_cheap_S:room
+35,comfortable,147,L:Westminster_P:very_cheap_S:room
+36,location near,134,L:Westminster_P:very_cheap_S:room
+37,friendly helpful,112,L:Westminster_P:very_cheap_S:room
+38,friendly host,100,L:Westminster_P:very_cheap_S:room
+39,room nice,99,L:Westminster_P:very_cheap_S:room
+40,short stay,95,L:Westminster_P:very_cheap_S:room
+41,one night,86,L:Westminster_P:very_cheap_S:room
+42,great location,876,L:Tower Hamlets_P:very_cheap_S:room
+43,nice place,753,L:Tower Hamlets_P:very_cheap_S:room
+44,clean,539,L:Tower Hamlets_P:very_cheap_S:room
+45,value money,471,L:Tower Hamlets_P:very_cheap_S:room
+46,walking distance,304,L:Tower Hamlets_P:very_cheap_S:room
+47,close tube station,275,L:Tower Hamlets_P:very_cheap_S:room
+48,great host,265,L:Tower Hamlets_P:very_cheap_S:room
+49,everything needed,164,L:Tower Hamlets_P:very_cheap_S:room
+50,brick lane,125,L:Tower Hamlets_P:very_cheap_S:room
+51,easy access,124,L:Tower Hamlets_P:very_cheap_S:room
+52,central location,111,L:Tower Hamlets_P:very_cheap_S:room
+53,public transport,100,L:Tower Hamlets_P:very_cheap_S:room
+54,canary wharf,82,L:Tower Hamlets_P:very_cheap_S:room
+55,nice room,81,L:Tower Hamlets_P:very_cheap_S:room
+56,short stay,80,L:Tower Hamlets_P:very_cheap_S:room
+57,bethnal green,77,L:Tower Hamlets_P:very_cheap_S:room
+58,city center,75,L:Tower Hamlets_P:very_cheap_S:room
+59,room nice,70,L:Tower Hamlets_P:very_cheap_S:room
+60,comfortable,69,L:Tower Hamlets_P:very_cheap_S:room
+61,location near,67,L:Tower Hamlets_P:very_cheap_S:room
+62,east london,65,L:Tower Hamlets_P:very_cheap_S:room
+63,kitchen bathroom,63,L:Tower Hamlets_P:very_cheap_S:room
+64,nice stay,62,L:Tower Hamlets_P:very_cheap_S:room
+65,clean place,60,L:Tower Hamlets_P:very_cheap_S:room
+66,bus stop,60,L:Tower Hamlets_P:very_cheap_S:room
+67,good communication,55,L:Tower Hamlets_P:very_cheap_S:room
+68,tower bridge,54,L:Tower Hamlets_P:very_cheap_S:room
+69,easy check,52,L:Tower Hamlets_P:very_cheap_S:room
+70,great location,928,L:Tower Hamlets_P:cheap_S:room
+71,nice place,639,L:Tower Hamlets_P:cheap_S:room
+72,clean,511,L:Tower Hamlets_P:cheap_S:room
+73,great host,325,L:Tower Hamlets_P:cheap_S:room
+74,walking distance,272,L:Tower Hamlets_P:cheap_S:room
+75,value money,242,L:Tower Hamlets_P:cheap_S:room
+76,close tube station,183,L:Tower Hamlets_P:cheap_S:room
+77,everything needed,177,L:Tower Hamlets_P:cheap_S:room
+78,comfortable,176,L:Tower Hamlets_P:cheap_S:room
+79,brick lane,173,L:Tower Hamlets_P:cheap_S:room
+80,easy access,131,L:Tower Hamlets_P:cheap_S:room
+81,canary wharf,126,L:Tower Hamlets_P:cheap_S:room
+82,comfortable bed,123,L:Tower Hamlets_P:cheap_S:room
+83,central location,118,L:Tower Hamlets_P:cheap_S:room
+84,public transport,97,L:Tower Hamlets_P:cheap_S:room
+85,east london,96,L:Tower Hamlets_P:cheap_S:room
+86,nice stay,69,L:Tower Hamlets_P:cheap_S:room
+87,friendly host,69,L:Tower Hamlets_P:cheap_S:room
+88,feel welcome,67,L:Tower Hamlets_P:cheap_S:room
+89,bethnal green,66,L:Tower Hamlets_P:cheap_S:room
+90,tower bridge,66,L:Tower Hamlets_P:cheap_S:room
+91,nice room,65,L:Tower Hamlets_P:cheap_S:room
+92,location near,61,L:Tower Hamlets_P:cheap_S:room
+93,friendly helpful,60,L:Tower Hamlets_P:cheap_S:room
+94,like home,59,L:Tower Hamlets_P:cheap_S:room
+95,great location,1305,L:Camden_P:very_cheap_S:room
+96,nice place,570,L:Camden_P:very_cheap_S:room
+97,clean,513,L:Camden_P:very_cheap_S:room
+98,kings cross st,486,L:Camden_P:very_cheap_S:room
+99,walking distance,414,L:Camden_P:very_cheap_S:room
+100,value money,275,L:Camden_P:very_cheap_S:room
+101,great host,269,L:Camden_P:very_cheap_S:room
+102,everything needed,175,L:Camden_P:very_cheap_S:room
+103,comfortable bed,159,L:Camden_P:very_cheap_S:room
+104,camden town,146,L:Camden_P:very_cheap_S:room
+105,central location,144,L:Camden_P:very_cheap_S:room
+106,close tube station,144,L:Camden_P:very_cheap_S:room
+107,easy access,137,L:Camden_P:very_cheap_S:room
+108,comfortable,137,L:Camden_P:very_cheap_S:room
+109,camden market,117,L:Camden_P:very_cheap_S:room
+110,location near,80,L:Camden_P:very_cheap_S:room
+111,friendly host,77,L:Camden_P:very_cheap_S:room
+112,kentish town,77,L:Camden_P:very_cheap_S:room
+113,friendly helpful,73,L:Camden_P:very_cheap_S:room
+114,one night,73,L:Camden_P:very_cheap_S:room
+115,train station,69,L:Camden_P:very_cheap_S:room
+116,public transport,68,L:Camden_P:very_cheap_S:room
+117,short stay,66,L:Camden_P:very_cheap_S:room
+118,room great,62,L:Camden_P:very_cheap_S:room
+119,bus stop,61,L:Camden_P:very_cheap_S:room
+120,easy check,60,L:Camden_P:very_cheap_S:room
+121,great location,893,L:Lambeth_P:cheap_S:room
+122,nice place,555,L:Lambeth_P:cheap_S:room
+123,walking distance,532,L:Lambeth_P:cheap_S:room
+124,clean,446,L:Lambeth_P:cheap_S:room
+125,close tube station,333,L:Lambeth_P:cheap_S:room
+126,great host,235,L:Lambeth_P:cheap_S:room
+127,comfortable bed,168,L:Lambeth_P:cheap_S:room
+128,everything needed,168,L:Lambeth_P:cheap_S:room
+129,central location,165,L:Lambeth_P:cheap_S:room
+130,easy access,161,L:Lambeth_P:cheap_S:room
+131,comfortable,99,L:Lambeth_P:cheap_S:room
+132,london eye,86,L:Lambeth_P:cheap_S:room
+133,feel welcome,84,L:Lambeth_P:cheap_S:room
+134,big ben,84,L:Lambeth_P:cheap_S:room
+135,location near,74,L:Lambeth_P:cheap_S:room
+136,public transport,74,L:Lambeth_P:cheap_S:room
+137,value money,72,L:Lambeth_P:cheap_S:room
+138,like home,71,L:Lambeth_P:cheap_S:room
+139,room great,70,L:Lambeth_P:cheap_S:room
+140,friendly helpful,69,L:Lambeth_P:cheap_S:room
+141,friendly host,68,L:Lambeth_P:cheap_S:room
+142,waterloo station,67,L:Lambeth_P:cheap_S:room
+143,bus stop,65,L:Lambeth_P:cheap_S:room
+144,one night,63,L:Lambeth_P:cheap_S:room
+145,room nice,59,L:Lambeth_P:cheap_S:room
+146,great location,890,L:Camden_P:cheap_S:room
+147,kings cross st,430,L:Camden_P:cheap_S:room
+148,nice place,405,L:Camden_P:cheap_S:room
+149,walking distance,394,L:Camden_P:cheap_S:room
+150,clean,342,L:Camden_P:cheap_S:room
+151,great host,268,L:Camden_P:cheap_S:room
+152,comfortable bed,195,L:Camden_P:cheap_S:room
+153,central location,165,L:Camden_P:cheap_S:room
+154,everything needed,132,L:Camden_P:cheap_S:room
+155,camden town,102,L:Camden_P:cheap_S:room
+156,comfortable,102,L:Camden_P:cheap_S:room
+157,close tube station,101,L:Camden_P:cheap_S:room
+158,value money,99,L:Camden_P:cheap_S:room
+159,camden market,76,L:Camden_P:cheap_S:room
+160,location near,70,L:Camden_P:cheap_S:room
+161,friendly helpful,66,L:Camden_P:cheap_S:room
+162,public transport,59,L:Camden_P:cheap_S:room
+163,british museum,54,L:Camden_P:cheap_S:room
+164,feel welcome,53,L:Camden_P:cheap_S:room
+165,friendly host,52,L:Camden_P:cheap_S:room
+166,like home,51,L:Camden_P:cheap_S:room
+167,short stay,49,L:Camden_P:cheap_S:room
+168,nice room,47,L:Camden_P:cheap_S:room
+169,great location,664,L:Southwark_P:cheap_S:room
+170,nice place,391,L:Southwark_P:cheap_S:room
+171,clean,342,L:Southwark_P:cheap_S:room
+172,walking distance,320,L:Southwark_P:cheap_S:room
+173,great host,239,L:Southwark_P:cheap_S:room
+174,close tube station,231,L:Southwark_P:cheap_S:room
+175,central location,139,L:Southwark_P:cheap_S:room
+176,comfortable bed,130,L:Southwark_P:cheap_S:room
+177,easy access,124,L:Southwark_P:cheap_S:room
+178,everything needed,118,L:Southwark_P:cheap_S:room
+179,london bridge,97,L:Southwark_P:cheap_S:room
+180,public transport,79,L:Southwark_P:cheap_S:room
+181,tower bridge,77,L:Southwark_P:cheap_S:room
+182,comfortable,77,L:Southwark_P:cheap_S:room
+183,elephant castle,76,L:Southwark_P:cheap_S:room
+184,bus stop,67,L:Southwark_P:cheap_S:room
+185,friendly helpful,60,L:Southwark_P:cheap_S:room
+186,friendly host,59,L:Southwark_P:cheap_S:room
+187,value money,56,L:Southwark_P:cheap_S:room
+188,location near,52,L:Southwark_P:cheap_S:room
+189,room nice,52,L:Southwark_P:cheap_S:room
+190,public transportation,51,L:Southwark_P:cheap_S:room
+191,room spacious,49,L:Southwark_P:cheap_S:room
+192,like home,48,L:Southwark_P:cheap_S:room
+193,city center,48,L:Southwark_P:cheap_S:room
+194,train station,47,L:Southwark_P:cheap_S:room
+195,within walking,47,L:Southwark_P:cheap_S:room
+196,great location,680,L:Hammersmith and Fulham_P:very_cheap_S:room
+197,close tube station,459,L:Hammersmith and Fulham_P:very_cheap_S:room
+198,clean,405,L:Hammersmith and Fulham_P:very_cheap_S:room
+199,nice place,356,L:Hammersmith and Fulham_P:very_cheap_S:room
+200,walking distance,339,L:Hammersmith and Fulham_P:very_cheap_S:room
+201,value money,258,L:Hammersmith and Fulham_P:very_cheap_S:room
+202,great host,248,L:Hammersmith and Fulham_P:very_cheap_S:room
+203,everything needed,150,L:Hammersmith and Fulham_P:very_cheap_S:room
+204,comfortable,150,L:Hammersmith and Fulham_P:very_cheap_S:room
+205,comfortable bed,127,L:Hammersmith and Fulham_P:very_cheap_S:room
+206,easy access,123,L:Hammersmith and Fulham_P:very_cheap_S:room
+207,like home,89,L:Hammersmith and Fulham_P:very_cheap_S:room
+208,central location,87,L:Hammersmith and Fulham_P:very_cheap_S:room
+209,friendly helpful,63,L:Hammersmith and Fulham_P:very_cheap_S:room
+210,friendly host,60,L:Hammersmith and Fulham_P:very_cheap_S:room
+211,public transport,58,L:Hammersmith and Fulham_P:very_cheap_S:room
+212,nice room,56,L:Hammersmith and Fulham_P:very_cheap_S:room
+213,location near,50,L:Hammersmith and Fulham_P:very_cheap_S:room
+214,well equipped,49,L:Hammersmith and Fulham_P:very_cheap_S:room
+215,room nice,47,L:Hammersmith and Fulham_P:very_cheap_S:room
+216,bus stop,46,L:Hammersmith and Fulham_P:very_cheap_S:room
+217,hammersmith station,44,L:Hammersmith and Fulham_P:very_cheap_S:room
+218,nice place,390,L:Southwark_P:very_cheap_S:room
+219,great location,353,L:Southwark_P:very_cheap_S:room
+220,clean,337,L:Southwark_P:very_cheap_S:room
+221,great host,226,L:Southwark_P:very_cheap_S:room
+222,walking distance,211,L:Southwark_P:very_cheap_S:room
+223,value money,196,L:Southwark_P:very_cheap_S:room
+224,central location,153,L:Southwark_P:very_cheap_S:room
+225,close tube station,141,L:Southwark_P:very_cheap_S:room
+226,comfortable bed,120,L:Southwark_P:very_cheap_S:room
+227,bus stop,118,L:Southwark_P:very_cheap_S:room
+228,like home,114,L:Southwark_P:very_cheap_S:room
+229,comfortable,114,L:Southwark_P:very_cheap_S:room
+230,everything needed,113,L:Southwark_P:very_cheap_S:room
+231,public transport,87,L:Southwark_P:very_cheap_S:room
+232,easy access,76,L:Southwark_P:very_cheap_S:room
+233,friendly helpful,63,L:Southwark_P:very_cheap_S:room
+234,city center,55,L:Southwark_P:very_cheap_S:room
+235,house clean,50,L:Southwark_P:very_cheap_S:room
+236,room nice,50,L:Southwark_P:very_cheap_S:room
+237,tower bridge,49,L:Southwark_P:very_cheap_S:room
+238,city centre,47,L:Southwark_P:very_cheap_S:room
+239,bus stops,47,L:Southwark_P:very_cheap_S:room
+240,london bridge,46,L:Southwark_P:very_cheap_S:room
+241,feel welcome,43,L:Southwark_P:very_cheap_S:room
+242,nice room,43,L:Southwark_P:very_cheap_S:room
+243,great location,352,L:Lambeth_P:very_cheap_S:room
+244,nice place,340,L:Lambeth_P:very_cheap_S:room
+245,great host,322,L:Lambeth_P:very_cheap_S:room
+246,clean,321,L:Lambeth_P:very_cheap_S:room
+247,walking distance,202,L:Lambeth_P:very_cheap_S:room
+248,close tube station,192,L:Lambeth_P:very_cheap_S:room
+249,central location,158,L:Lambeth_P:very_cheap_S:room
+250,easy access,131,L:Lambeth_P:very_cheap_S:room
+251,comfortable,128,L:Lambeth_P:very_cheap_S:room
+252,value money,128,L:Lambeth_P:very_cheap_S:room
+253,like home,123,L:Lambeth_P:very_cheap_S:room
+254,everything needed,119,L:Lambeth_P:very_cheap_S:room
+255,comfortable bed,109,L:Lambeth_P:very_cheap_S:room
+256,bus stop,67,L:Lambeth_P:very_cheap_S:room
+257,train station,63,L:Lambeth_P:very_cheap_S:room
+258,public transport,60,L:Lambeth_P:very_cheap_S:room
+259,friendly helpful,58,L:Lambeth_P:very_cheap_S:room
+260,friendly host,54,L:Lambeth_P:very_cheap_S:room
+261,feel welcome,53,L:Lambeth_P:very_cheap_S:room
+262,room nice,53,L:Lambeth_P:very_cheap_S:room
+263,brixton station,48,L:Lambeth_P:very_cheap_S:room
+264,feel like,47,L:Lambeth_P:very_cheap_S:room
+265,nice room,47,L:Lambeth_P:very_cheap_S:room
+266,bus stops,45,L:Lambeth_P:very_cheap_S:room
+267,get around,43,L:Lambeth_P:very_cheap_S:room
+268,room great,41,L:Lambeth_P:very_cheap_S:room
+269,great location,1160,L:Westminster_P:cheap_S:small
+270,walking distance,392,L:Westminster_P:cheap_S:small
+271,nice place,364,L:Westminster_P:cheap_S:small
+272,close tube station,272,L:Westminster_P:cheap_S:small
+273,clean,244,L:Westminster_P:cheap_S:small
+274,everything needed,193,L:Westminster_P:cheap_S:small
+275,hyde park,174,L:Westminster_P:cheap_S:small
+276,central location,150,L:Westminster_P:cheap_S:small
+277,apartment great,138,L:Westminster_P:cheap_S:small
+278,location near,131,L:Westminster_P:cheap_S:small
+279,easy access,128,L:Westminster_P:cheap_S:small
+280,paddington station,117,L:Westminster_P:cheap_S:small
+281,great host,114,L:Westminster_P:cheap_S:small
+282,value money,93,L:Westminster_P:cheap_S:small
+283,victoria station,81,L:Westminster_P:cheap_S:small
+284,well equipped,72,L:Westminster_P:cheap_S:small
+285,notting hill,64,L:Westminster_P:cheap_S:small
+286,short stay,60,L:Westminster_P:cheap_S:small
+287,shops restaurants,58,L:Westminster_P:cheap_S:small
+288,public transport,50,L:Westminster_P:cheap_S:small
+289,quick respond,50,L:Westminster_P:cheap_S:small
+290,comfortable,50,L:Westminster_P:cheap_S:small
+291,two people,46,L:Westminster_P:cheap_S:small
+292,within walking,44,L:Westminster_P:cheap_S:small
+293,great location,596,L:Hackney_P:cheap_S:room
+294,nice place,338,L:Hackney_P:cheap_S:room
+295,great host,246,L:Hackney_P:cheap_S:room
+296,clean,236,L:Hackney_P:cheap_S:room
+297,walking distance,216,L:Hackney_P:cheap_S:room
+298,comfortable bed,169,L:Hackney_P:cheap_S:room
+299,everything needed,129,L:Hackney_P:cheap_S:room
+300,like home,113,L:Hackney_P:cheap_S:room
+301,comfortable,78,L:Hackney_P:cheap_S:room
+302,east london,77,L:Hackney_P:cheap_S:room
+303,public transport,67,L:Hackney_P:cheap_S:room
+304,central location,66,L:Hackney_P:cheap_S:room
+305,easy access,65,L:Hackney_P:cheap_S:room
+306,friendly helpful,59,L:Hackney_P:cheap_S:room
+307,feel welcome,59,L:Hackney_P:cheap_S:room
+308,old street,58,L:Hackney_P:cheap_S:room
+309,bus stop,45,L:Hackney_P:cheap_S:room
+310,broadway market,44,L:Hackney_P:cheap_S:room
+311,close tube station,43,L:Hackney_P:cheap_S:room
+312,bars restaurants,43,L:Hackney_P:cheap_S:room
+313,overground station,42,L:Hackney_P:cheap_S:room
+314,stoke newington,40,L:Hackney_P:cheap_S:room
+315,friendly host,40,L:Hackney_P:cheap_S:room
+316,room bathroom,40,L:Hackney_P:cheap_S:room
+317,room spacious,40,L:Hackney_P:cheap_S:room
+318,great location,616,L:Islington_P:very_cheap_S:room
+319,nice place,320,L:Islington_P:very_cheap_S:room
+320,clean,299,L:Islington_P:very_cheap_S:room
+321,great host,212,L:Islington_P:very_cheap_S:room
+322,close tube station,174,L:Islington_P:very_cheap_S:room
+323,walking distance,159,L:Islington_P:very_cheap_S:room
+324,value money,152,L:Islington_P:very_cheap_S:room
+325,kings cross st,141,L:Islington_P:very_cheap_S:room
+326,comfortable,134,L:Islington_P:very_cheap_S:room
+327,comfortable bed,112,L:Islington_P:very_cheap_S:room
+328,everything needed,107,L:Islington_P:very_cheap_S:room
+329,central location,100,L:Islington_P:very_cheap_S:room
+330,easy access,99,L:Islington_P:very_cheap_S:room
+331,like home,89,L:Islington_P:very_cheap_S:room
+332,finsbury park,63,L:Islington_P:very_cheap_S:room
+333,bus stop,59,L:Islington_P:very_cheap_S:room
+334,public transport,57,L:Islington_P:very_cheap_S:room
+335,room nice,54,L:Islington_P:very_cheap_S:room
+336,room spacious,51,L:Islington_P:very_cheap_S:room
+337,friendly helpful,50,L:Islington_P:very_cheap_S:room
+338,friendly host,50,L:Islington_P:very_cheap_S:room
+339,feel welcome,49,L:Islington_P:very_cheap_S:room
+340,room great,42,L:Islington_P:very_cheap_S:room
+341,location near,40,L:Islington_P:very_cheap_S:room
+342,one night,39,L:Islington_P:very_cheap_S:room
+343,great location,690,L:Kensington and Chelsea_P:very_cheap_S:room
+344,close tube station,333,L:Kensington and Chelsea_P:very_cheap_S:room
+345,nice place,292,L:Kensington and Chelsea_P:very_cheap_S:room
+346,great host,272,L:Kensington and Chelsea_P:very_cheap_S:room
+347,clean,266,L:Kensington and Chelsea_P:very_cheap_S:room
+348,walking distance,236,L:Kensington and Chelsea_P:very_cheap_S:room
+349,notting hill,193,L:Kensington and Chelsea_P:very_cheap_S:room
+350,comfortable,122,L:Kensington and Chelsea_P:very_cheap_S:room
+351,portobello road,114,L:Kensington and Chelsea_P:very_cheap_S:room
+352,comfortable bed,106,L:Kensington and Chelsea_P:very_cheap_S:room
+353,like home,99,L:Kensington and Chelsea_P:very_cheap_S:room
+354,easy access,96,L:Kensington and Chelsea_P:very_cheap_S:room
+355,central location,71,L:Kensington and Chelsea_P:very_cheap_S:room
+356,portobello market,69,L:Kensington and Chelsea_P:very_cheap_S:room
+357,friendly helpful,60,L:Kensington and Chelsea_P:very_cheap_S:room
+358,hyde park,53,L:Kensington and Chelsea_P:very_cheap_S:room
+359,friendly host,51,L:Kensington and Chelsea_P:very_cheap_S:room
+360,feel welcome,48,L:Kensington and Chelsea_P:very_cheap_S:room
+361,location near,48,L:Kensington and Chelsea_P:very_cheap_S:room
+362,south kensington,45,L:Kensington and Chelsea_P:very_cheap_S:room
+363,room nice,45,L:Kensington and Chelsea_P:very_cheap_S:room
+364,around corner,45,L:Kensington and Chelsea_P:very_cheap_S:room
+365,everything needed,44,L:Kensington and Chelsea_P:very_cheap_S:room
+366,short stay,44,L:Kensington and Chelsea_P:very_cheap_S:room
+367,bus stop,44,L:Kensington and Chelsea_P:very_cheap_S:room
+368,public transport,43,L:Kensington and Chelsea_P:very_cheap_S:room
+369,room great,42,L:Kensington and Chelsea_P:very_cheap_S:room
+370,great location,909,L:Westminster_P:cheap_S:room
+371,walking distance,277,L:Westminster_P:cheap_S:room
+372,clean,264,L:Westminster_P:cheap_S:room
+373,nice place,252,L:Westminster_P:cheap_S:room
+374,central location,216,L:Westminster_P:cheap_S:room
+375,close tube station,125,L:Westminster_P:cheap_S:room
+376,great host,117,L:Westminster_P:cheap_S:room
+377,everything needed,113,L:Westminster_P:cheap_S:room
+378,value money,107,L:Westminster_P:cheap_S:room
+379,comfortable bed,87,L:Westminster_P:cheap_S:room
+380,hyde park,84,L:Westminster_P:cheap_S:room
+381,easy access,83,L:Westminster_P:cheap_S:room
+382,paddington station,77,L:Westminster_P:cheap_S:room
+383,location near,59,L:Westminster_P:cheap_S:room
+384,comfortable,57,L:Westminster_P:cheap_S:room
+385,victoria station,55,L:Westminster_P:cheap_S:room
+386,oxford street,45,L:Westminster_P:cheap_S:room
+387,heart london,43,L:Westminster_P:cheap_S:room
+388,within walking,40,L:Westminster_P:cheap_S:room
+389,location clean,34,L:Westminster_P:cheap_S:room
+390,friendly helpful,34,L:Westminster_P:cheap_S:room
+391,public transport,34,L:Westminster_P:cheap_S:room
+392,leicester square,32,L:Westminster_P:cheap_S:room
+393,great location,531,L:Islington_P:cheap_S:room
+394,kings cross st,328,L:Islington_P:cheap_S:room
+395,great host,282,L:Islington_P:cheap_S:room
+396,nice place,275,L:Islington_P:cheap_S:room
+397,walking distance,246,L:Islington_P:cheap_S:room
+398,clean,187,L:Islington_P:cheap_S:room
+399,close tube station,156,L:Islington_P:cheap_S:room
+400,comfortable bed,130,L:Islington_P:cheap_S:room
+401,everything needed,89,L:Islington_P:cheap_S:room
+402,like home,85,L:Islington_P:cheap_S:room
+403,comfortable,76,L:Islington_P:cheap_S:room
+404,central location,74,L:Islington_P:cheap_S:room
+405,friendly helpful,55,L:Islington_P:cheap_S:room
+406,feel welcome,51,L:Islington_P:cheap_S:room
+407,location near,50,L:Islington_P:cheap_S:room
+408,public transport,50,L:Islington_P:cheap_S:room
+409,easy access,46,L:Islington_P:cheap_S:room
+410,room spacious,42,L:Islington_P:cheap_S:room
+411,room great,41,L:Islington_P:cheap_S:room
+412,exactly described,39,L:Islington_P:cheap_S:room
+413,lovely room,37,L:Islington_P:cheap_S:room
+414,great location,1059,L:Westminster_P:very_expensive_S:large
+415,walking distance,320,L:Westminster_P:very_expensive_S:large
+416,nice place,231,L:Westminster_P:very_expensive_S:large
+417,clean,157,L:Westminster_P:very_expensive_S:large
+418,hyde park,117,L:Westminster_P:very_expensive_S:large
+419,close tube station,116,L:Westminster_P:very_expensive_S:large
+420,central location,115,L:Westminster_P:very_expensive_S:large
+421,apartment great,113,L:Westminster_P:very_expensive_S:large
+422,everything needed,98,L:Westminster_P:very_expensive_S:large
+423,covent garden,89,L:Westminster_P:very_expensive_S:large
+424,well equipped,76,L:Westminster_P:very_expensive_S:large
+425,great host,76,L:Westminster_P:very_expensive_S:large
+426,paddington station,73,L:Westminster_P:very_expensive_S:large
+427,victoria station,62,L:Westminster_P:very_expensive_S:large
+428,location near,59,L:Westminster_P:very_expensive_S:large
+429,great apartment,54,L:Westminster_P:very_expensive_S:large
+430,oxford street,50,L:Westminster_P:very_expensive_S:large
+431,easy access,50,L:Westminster_P:very_expensive_S:large
+432,comfortable,48,L:Westminster_P:very_expensive_S:large
+433,within walking,43,L:Westminster_P:very_expensive_S:large
+434,hot water,42,L:Westminster_P:very_expensive_S:large
+435,shops restaurants,42,L:Westminster_P:very_expensive_S:large
+436,apartment perfect,39,L:Westminster_P:very_expensive_S:large
+437,well appointed,38,L:Westminster_P:very_expensive_S:large
+438,buckingham palace,37,L:Westminster_P:very_expensive_S:large
+439,beds comfortable,36,L:Westminster_P:very_expensive_S:large
+440,around corner,36,L:Westminster_P:very_expensive_S:large
+441,clean spacious,35,L:Westminster_P:very_expensive_S:large
+442,nice apartment,35,L:Westminster_P:very_expensive_S:large
+443,nice place,370,L:Hackney_P:very_cheap_S:room
+444,great location,366,L:Hackney_P:very_cheap_S:room
+445,great host,224,L:Hackney_P:very_cheap_S:room
+446,clean,157,L:Hackney_P:very_cheap_S:room
+447,value money,156,L:Hackney_P:very_cheap_S:room
+448,walking distance,135,L:Hackney_P:very_cheap_S:room
+449,comfortable bed,129,L:Hackney_P:very_cheap_S:room
+450,everything needed,107,L:Hackney_P:very_cheap_S:room
+451,comfortable,107,L:Hackney_P:very_cheap_S:room
+452,like home,102,L:Hackney_P:very_cheap_S:room
+453,easy access,98,L:Hackney_P:very_cheap_S:room
+454,central location,74,L:Hackney_P:very_cheap_S:room
+455,friendly helpful,63,L:Hackney_P:very_cheap_S:room
+456,east london,62,L:Hackney_P:very_cheap_S:room
+457,public transport,61,L:Hackney_P:very_cheap_S:room
+458,stoke newington,56,L:Hackney_P:very_cheap_S:room
+459,feel welcome,53,L:Hackney_P:very_cheap_S:room
+460,london fields,49,L:Hackney_P:very_cheap_S:room
+461,room nice,45,L:Hackney_P:very_cheap_S:room
+462,bus stop,45,L:Hackney_P:very_cheap_S:room
+463,friendly host,43,L:Hackney_P:very_cheap_S:room
+464,room spacious,42,L:Hackney_P:very_cheap_S:room
+465,overground station,39,L:Hackney_P:very_cheap_S:room
+466,broadway market,37,L:Hackney_P:very_cheap_S:room
+467,victoria park,36,L:Hackney_P:very_cheap_S:room
+468,thank much,35,L:Hackney_P:very_cheap_S:room
+469,lovely place,34,L:Hackney_P:very_cheap_S:room
+470,warm welcoming,33,L:Hackney_P:very_cheap_S:room
+471,great location,881,L:Westminster_P:expensive_S:large
+472,walking distance,393,L:Westminster_P:expensive_S:large
+473,nice place,252,L:Westminster_P:expensive_S:large
+474,clean,236,L:Westminster_P:expensive_S:large
+475,close tube station,211,L:Westminster_P:expensive_S:large
+476,central location,138,L:Westminster_P:expensive_S:large
+477,apartment great,120,L:Westminster_P:expensive_S:large
+478,hyde park,111,L:Westminster_P:expensive_S:large
+479,great host,109,L:Westminster_P:expensive_S:large
+480,easy access,108,L:Westminster_P:expensive_S:large
+481,everything needed,104,L:Westminster_P:expensive_S:large
+482,well equipped,77,L:Westminster_P:expensive_S:large
+483,paddington station,64,L:Westminster_P:expensive_S:large
+484,location near,55,L:Westminster_P:expensive_S:large
+485,comfortable,54,L:Westminster_P:expensive_S:large
+486,within walking,48,L:Westminster_P:expensive_S:large
+487,covent garden,47,L:Westminster_P:expensive_S:large
+488,shops restaurants,41,L:Westminster_P:expensive_S:large
+489,victoria station,41,L:Westminster_P:expensive_S:large
+490,great apartment,38,L:Westminster_P:expensive_S:large
+491,notting hill,38,L:Westminster_P:expensive_S:large
+492,hot water,35,L:Westminster_P:expensive_S:large
+493,little venice,34,L:Westminster_P:expensive_S:large
+494,nice apartment,34,L:Westminster_P:expensive_S:large
+495,clean spacious,34,L:Westminster_P:expensive_S:large
+496,great location,944,L:Westminster_P:average_S:small
+497,walking distance,339,L:Westminster_P:average_S:small
+498,nice place,227,L:Westminster_P:average_S:small
+499,central location,178,L:Westminster_P:average_S:small
+500,close tube station,176,L:Westminster_P:average_S:small
+501,everything needed,158,L:Westminster_P:average_S:small
+502,clean,152,L:Westminster_P:average_S:small
+503,apartment great,134,L:Westminster_P:average_S:small
+504,hyde park,109,L:Westminster_P:average_S:small
+505,great host,101,L:Westminster_P:average_S:small
+506,easy access,96,L:Westminster_P:average_S:small
+507,well equipped,75,L:Westminster_P:average_S:small
+508,location near,65,L:Westminster_P:average_S:small
+509,oxford street,56,L:Westminster_P:average_S:small
+510,within walking,54,L:Westminster_P:average_S:small
+511,quick respond,52,L:Westminster_P:average_S:small
+512,paddington station,50,L:Westminster_P:average_S:small
+513,victoria station,50,L:Westminster_P:average_S:small
+514,comfortable,47,L:Westminster_P:average_S:small
+515,great apartment,45,L:Westminster_P:average_S:small
+516,comfortable bed,43,L:Westminster_P:average_S:small
+517,shops restaurants,42,L:Westminster_P:average_S:small
+518,notting hill,38,L:Westminster_P:average_S:small
+519,sofa bed,37,L:Westminster_P:average_S:small
+520,hot water,36,L:Westminster_P:average_S:small
+521,covent garden,35,L:Westminster_P:average_S:small
+522,around corner,35,L:Westminster_P:average_S:small
+523,great location,310,L:Wandsworth_P:cheap_S:room
+524,great host,274,L:Wandsworth_P:cheap_S:room
+525,nice place,230,L:Wandsworth_P:cheap_S:room
+526,clean,209,L:Wandsworth_P:cheap_S:room
+527,walking distance,201,L:Wandsworth_P:cheap_S:room
+528,comfortable bed,141,L:Wandsworth_P:cheap_S:room
+529,comfortable,119,L:Wandsworth_P:cheap_S:room
+530,like home,100,L:Wandsworth_P:cheap_S:room
+531,central location,91,L:Wandsworth_P:cheap_S:room
+532,easy access,85,L:Wandsworth_P:cheap_S:room
+533,battersea park,82,L:Wandsworth_P:cheap_S:room
+534,everything needed,77,L:Wandsworth_P:cheap_S:room
+535,clapham junction,74,L:Wandsworth_P:cheap_S:room
+536,value money,69,L:Wandsworth_P:cheap_S:room
+537,feel welcome,66,L:Wandsworth_P:cheap_S:room
+538,close tube station,61,L:Wandsworth_P:cheap_S:room
+539,public transport,53,L:Wandsworth_P:cheap_S:room
+540,bus stop,52,L:Wandsworth_P:cheap_S:room
+541,friendly helpful,47,L:Wandsworth_P:cheap_S:room
+542,train station,44,L:Wandsworth_P:cheap_S:room
+543,private bathroom,43,L:Wandsworth_P:cheap_S:room
+544,lovely home,41,L:Wandsworth_P:cheap_S:room
+545,friendly welcoming,38,L:Wandsworth_P:cheap_S:room
+546,comfortable room,32,L:Wandsworth_P:cheap_S:room

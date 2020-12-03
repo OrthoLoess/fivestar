@@ -1,11 +1,14 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
-from fivestar.clusters import get_cluster_coords
-# from fivestar.lib import get_listing
+from fivestar.clusters import get_cluster_coords, get_cluster_ranking, listing_to_cluster
 from fivestar.lib import FiveStar
+from fivestar.utils import str_to_price
+from fivestar.get_wordcloud import get_wordcloud
+
 
 # lists for select boxes (to be replaced by imported lists/params)
 borough_list = ['Hackney', 'Westminster', 'Wimbledon']
@@ -96,44 +99,51 @@ if st.button('Yes! I want to improve'):
     host_select = st.selectbox('',['No, I am new to hosting', 'I am a host already'])
 
 # Asking for listing ID and storing as 'listing_id'
-listing_id = st.text_input('What is your listing ID?',)
+listing_id = st.text_input('What is your listing ID?',53242)
 st.write('Your listing ID is', listing_id)
-
-
+listing_id = int(listing_id)
 listing_data = fs.get_listing(listing_id)
+
+cluster_id = listing_to_cluster(listing_id)
+#wordcount = pd.read_csv('data/jan/word_counts2.csv')
+cloud = get_wordcloud(cluster_id)
+
+
+cl_rank, cl_average = get_cluster_ranking(listing_data['neighbourhood_cleansed'],str_to_price(listing_data['price']), \
+    listing_data['room_type'], listing_data['bedrooms'], listing_id)
 # print(listing)
 
 # display information boxes depending on cluster and listing id
 st.write('')
 st.header('How you compare (vs similar group of properties)')
-rev_one, rev_two = st.beta_columns(2)
+rev_one, rev_two, rev_three = st.beta_columns(3)
 with rev_one:
     st.write('')
     st.write('')
     st.write('')
-    st.markdown("<h2 style='text-align: center; color: blue;'>Your review score: 95.4</h1>",
+    st.markdown(f"<h2 style='text-align: center; color: #e3256b;'>Your review score: <strong>{round(listing_data['review_scores_rating']/20, 1)}</h1>",
      unsafe_allow_html=True)
 with rev_two:
     st.write('')
     st.write('')
     st.write('')
-    st.markdown("<h2 style='text-align: center; color: blue;'>Avg review score: 97.4</h1>",
+    st.markdown(f"<h2 style='text-align: center; color: #e3256b;'>Group review score: <strong>{round(cl_average/20, 1)}</h1>",
      unsafe_allow_html=True)
-
-
-rev_three, rev_four = st.beta_columns(2)
 with rev_three:
     st.write('')
     st.write('')
     st.write('')
-    st.markdown("<h2 style='text-align: center; color: red;'>Your ranking: 20 percentile</h1>",
+    st.markdown(f"<h2 style='text-align: center; color: #e3256b;'>You are in the bottom <strong>{abs(int(round(cl_rank*100,0))-100)}%</strong></h1>",
      unsafe_allow_html=True)
-with rev_four:
-    st.write('')
-    st.write('')
-    st.write('')
-    st.markdown("<h2 style='text-align: center; color: black;'>Great location, clean and tidy, friendly communication...</h1>",
-     unsafe_allow_html=True)
+
+st.write('')
+st.write('')
+st.header('What the top listings in your group offer')
+
+fig, ax = plt.subplots()
+ax.imshow(cloud, interpolation="bilinear")
+ax.axis("off")
+st.pyplot(fig)
 
     # st.text_area('What makes visitors give great reviews', value='''
     #     It was the best of times, it was the worst of times, it was
