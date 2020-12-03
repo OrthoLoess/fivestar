@@ -147,7 +147,7 @@ with rev_three:
         st.markdown(f"<h2 style='text-align: center; color: green;'>You are in the top <strong>{percentile}%</strong></h1>",
      unsafe_allow_html=True)
     else:
-        st.markdown(f"<h2 style='text-align: center; color: red;'>You are in the bottom <strong>{percentile}%</strong></h1>",
+        st.markdown(f"<h2 style='text-align: center; color: red;'>You are in the bottom <strong>{abs(percentile-100)}%</strong></h1>",
      unsafe_allow_html=True)
 
 st.write('')
@@ -170,7 +170,7 @@ st.write('')
 st.header('How you can shift your review score')
 
 # avgs for cluster
-avg_guests_accom = int(round(example_df['guests_to_accom'].mean(),0))
+avg_guests_accom = 55
 #
 #
 #
