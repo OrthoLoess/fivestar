@@ -190,33 +190,31 @@ def get_cluster_averages(fs, cluster_id):
     return fs.get_cluster_averages(cluster_id)
 
 cluster_averages = get_cluster_averages(fs, cluster_id)
-
+left_col_spacing = '<br>'
 with slide_col_left:
     st.subheader('Averages for your group')
-    st.write(f"{cluster_averages['cancellation_policy']:1.0f}% of listings have a strict cancellation policy")
-    st.write('')
-    st.write('')
-    st.write('')
-    st.write(f"{cluster_averages['instant_bookable']:1.0f}% of listings are instantly bookable")
-    st.write('')
-    st.write('')
-    st.write('')
-    st.write(f"{cluster_averages['Wifi']:1.0f}% of listings have wifi available")
-    st.write('')
-    st.write('')
-    st.write('')
-    st.write(f"{cluster_averages['Breakfast']:1.0f}% of listings have breakfast included")
-    st.write('')
-    st.write('')
-    st.write('')
-    st.write(f"The average price of listings is £{round(cluster_averages['price'])}")
-    st.write('')
-    st.write('')
-    st.write('')
-    st.write('')
-    st.write('')
     st.write(f"The average cleaning standard of listings is {round(cluster_averages['review_scores_cleanliness'])}")
-    st.write('')
+    st.markdown(left_col_spacing,
+        unsafe_allow_html=True)
+
+    st.write(f"{cluster_averages['Breakfast']:1.0f}% of listings have breakfast included")
+    st.markdown(left_col_spacing,
+        unsafe_allow_html=True)
+
+    st.write(f"{cluster_averages['cancellation_policy']:1.0f}% of listings have a strict cancellation policy")
+    st.markdown(left_col_spacing,
+        unsafe_allow_html=True)
+
+    st.write(f"{cluster_averages['instant_bookable']:1.0f}% of listings are instantly bookable")
+    st.markdown(left_col_spacing,
+        unsafe_allow_html=True)
+
+    st.write(f"The average price of listings is £{round(cluster_averages['price'])}")
+    st.markdown(left_col_spacing,
+        unsafe_allow_html=True)
+
+    st.write(f"{cluster_averages['Wifi']:1.0f}% of listings have wifi available")
+
 
 
 with slide_col_mid:
@@ -225,6 +223,16 @@ with slide_col_mid:
     # guests_accom = st.slider('Guests to accommodate', 0, 16, avg_guests_accom)
     # st.write(guests_accom, 'guests')
     # st.write('')
+
+    cleanliness_delta = st.slider(
+        'Cleaning standard', 0, 10,
+        int(listing_data.get('review_scores_cleanliness', 9))
+        )
+    st.write('')
+
+    breakfast = st.select_slider(
+        'Breakfast included',options=['No', 'Yes'], value='Yes' if 'Breakfast' in listing_data['amenities'] else 'No')
+    st.write('')
 
     can_strict = st.select_slider(
         'Strict cancellation policy',options=['No', 'Yes'], value=cancel_policy(listing_data))
@@ -236,24 +244,13 @@ with slide_col_mid:
     st.write('')
     #st.write('Instantly bookable:', inst_book)
 
+    price_ratio = st.slider('Price adjustor, £', 0, 250, int(str_to_price(listing_data.get('price', 20))))
+    st.write('')
+
     wifi = st.select_slider(
         'Wifi available',options=['No', 'Yes'], value='Yes' if 'Wifi' in listing_data['amenities'] else 'No')
     st.write('')
 
-    breakfast = st.select_slider(
-        'Breakfast included',options=['No', 'Yes'], value='Yes' if 'Breakfast' in listing_data['amenities'] else 'No')
-    st.write('')
-
-    price_ratio = st.slider('Price adjustor, £', 0, 250, int(str_to_price(listing_data.get('price', 20))))
-    st.write('£', price_ratio, )
-    st.write('')
-
-    cleanliness_delta = st.slider(
-        'Cleaning standard', 0, 10,
-        int(listing_data.get('review_scores_cleanliness', 9))
-        )
-    st.write('Expected standard of cleanliness:', cleanliness_delta )
-    st.write('')
 
     # amenity_options = st.multiselect('Amenities offered',
     #     amenities_example)
@@ -277,20 +274,24 @@ new_ranking =(get_ranking(cl_scores, new_score)*100)
 ranking_delta= int(round(new_ranking - old_ranking))
 
 calculated_new = average_score + score_delta
+star_shift = round(score_delta / 20, 2)
 
 with slide_col_right:
     st.subheader('Review score impact')
     st.write('')
     #st.write('original predicted review score:', old_score)
     #st.write('new predicted review score:', new_score)
-    st.write('Your review score has changed by:', round(score_delta/20, 2), 'stars!')
+    if star_shift < 0:
+        st.markdown(f'Your review score has gone down by <span style="color:red">{0 - star_shift}</span> stars!', unsafe_allow_html=True)
+    else:
+        st.markdown(f'Your review score has increased by <span style="color:green">{star_shift}</span> stars!', unsafe_allow_html=True)
     #st.write('original average review score:', average_score)
     #st.write('calculated new score prediction:', calculated_new)
     st.write('')
     if ranking_delta <= 0:
-        st.write('Your ranking in the group of similar listings has improved by', abs(ranking_delta), '!')
+        st.write(f'Your ranking in the group of similar listings has improved by {abs(ranking_delta)}%!')
     else:
-        st.write('Your ranking in the group of similar listings has worsened by', abs(ranking_delta), '%!')
+        st.write(f'Your ranking in the group of similar listings has worsened by {abs(ranking_delta)}%!')
 
     #st.write('New ranking:', new_ranking, '%')
 # checkbox functionality
