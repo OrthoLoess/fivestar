@@ -10,10 +10,10 @@ from fivestar.utils import str_to_price, cancel_policy, get_ranking
 from fivestar.get_wordcloud import get_wordcloud
 from fivestar.params import BOROUGHS, CLUSTER_PERCENTILES
 
-
+#st.beta_set_page_config(layout="wide")
 # lists for select boxes (to be replaced by imported lists/params)
 borough_list = sorted(BOROUGHS)
-ptype_list = ['Apartment', 'Room']
+ptype_list = ['Full property', 'Room']
 bedrooms_list = ['studio', '1', '2', '3+']
 price_list = ['£79 or less', '£80 - £99', '£100 - £119', '£120 - £139', '£140 or above' ]
 amenities_example = ['wifi', 'toaster', 'hangers', 'parking', 'sauna', 'swimming pool']
@@ -52,7 +52,7 @@ with map_col_left:
     sel3 = st.selectbox('No. Bedrooms', bedrooms_list)
     price = st.number_input('Price per night, £', min_value=50)
 
-    if sel2 == 'Apartment':
+    if sel2 == 'Full property':
         sel2cat='Entire home/apt'
     else:
         sel2cat='room'
@@ -179,32 +179,36 @@ avg_guests_accom = 55
 #
 
 # sliders for model
-slide_col_left, slide_col_mid, slide_col_right = st.beta_columns([1,2,1])
+slide_col_left, slide_col_mid, slide_col_right = st.beta_columns([2,3,2])
 
 cluster_averages = fs.get_cluster_averages(cluster_id)
 
 with slide_col_left:
     st.subheader('Averages for your group')
-    st.write('')
-    st.write('')
-    st.write(f"{cluster_averages['cancellation_policy']}% of listings in this group have a strict cancellation policy")
-    st.write('')
+    st.write(f"{cluster_averages['cancellation_policy']}% of listings have a strict cancellation policy")
     st.write('')
     st.write('')
     st.write('')
-    st.write('')
-    st.write(avg_guests_accom, 'avg guests')
-    st.write('')
+    st.write(f"{cluster_averages['instant_bookable']}% of listings are instantly bookable")
     st.write('')
     st.write('')
     st.write('')
-    st.write(avg_guests_accom, 'avg guests')
+    st.write(f"{cluster_averages['Wifi']}% of listings have wifi available")
+    st.write('')
+    st.write('')
+    st.write('')
+    st.write(f"{cluster_averages['Breakfast']}% of listings have breakfast included")
+    st.write('')
+    st.write('')
+    st.write('')
+    st.write(f"The average price of listings is {round(cluster_averages['price'])} £")
     st.write('')
     st.write('')
     st.write('')
     st.write('')
-    st.write(avg_guests_accom, 'avg guests')
-
+    st.write('')
+    st.write(f"The average cleaning standard of listings is {round(cluster_averages['review_scores_cleanliness'])}")
+    st.write('')
 
 
 with slide_col_mid:
@@ -260,21 +264,27 @@ old_score = fs.predict_on_new_values(listing_id)
 new_score = fs.predict_on_new_values(listing_id, values)
 average_score = listing_data['review_scores_rating']
 score_delta = new_score - old_score
-old_ranking =round(get_ranking(cl_scores, old_score)*100)
-new_ranking =round(get_ranking(cl_scores, new_score)*100)
+old_ranking =(get_ranking(cl_scores, old_score)*100)
+new_ranking =(get_ranking(cl_scores, new_score)*100)
+ranking_delta= int(round(new_ranking - old_ranking))
 
 calculated_new = average_score + score_delta
-print(cl_scores)
+
 with slide_col_right:
     st.subheader('Review score impact')
     st.write('')
-    st.write('original predicted review score:', old_score)
-    st.write('new predicted review score:', new_score)
-    st.write('difference between predictions:', score_delta)
-    st.write('original average review score:', average_score)
-    st.write('calculated new score prediction:', calculated_new)
-    st.write('Old ranking:', old_ranking, '%')
-    st.write('New ranking:', new_ranking, '%')
+    #st.write('original predicted review score:', old_score)
+    #st.write('new predicted review score:', new_score)
+    st.write('Your review score has changed by:', round(score_delta/20, 2), 'stars!')
+    #st.write('original average review score:', average_score)
+    #st.write('calculated new score prediction:', calculated_new)
+    st.write('')
+    if ranking_delta <= 0:
+        st.write('Your ranking in the group of similar listings has improved by', abs(ranking_delta), '!')
+    else:
+        st.write('Your ranking in the group of similar listings has worsened by', abs(ranking_delta), '%!')
+
+    #st.write('New ranking:', new_ranking, '%')
 # checkbox functionality
 
 # if st.checkbox('Show dataframe'):
