@@ -6,7 +6,7 @@ from wordcloud import WordCloud
 
 from fivestar.clusters import get_cluster_coords, get_cluster_ranking, listing_to_cluster, price_cat
 from fivestar.lib import FiveStar
-from fivestar.utils import str_to_price, cancel_policy
+from fivestar.utils import str_to_price, cancel_policy, get_ranking
 from fivestar.get_wordcloud import get_wordcloud
 from fivestar.params import BOROUGHS, CLUSTER_PERCENTILES
 
@@ -257,9 +257,11 @@ old_score = fs.predict_on_new_values(listing_id)
 new_score = fs.predict_on_new_values(listing_id, values)
 average_score = listing_data['review_scores_rating']
 score_delta = new_score - old_score
+old_ranking =round(get_ranking(cl_scores, old_score)*100)
+new_ranking =round(get_ranking(cl_scores, new_score)*100)
 
 calculated_new = average_score + score_delta
-
+print(cl_scores)
 with slide_col_right:
     st.subheader('Review score impact')
     st.write('')
@@ -268,8 +270,8 @@ with slide_col_right:
     st.write('difference between predictions:', score_delta)
     st.write('original average review score:', average_score)
     st.write('calculated new score prediction:', calculated_new)
-
-
+    st.write('Old ranking:', old_ranking, '%')
+    st.write('New ranking:', new_ranking, '%')
 # checkbox functionality
 
 # if st.checkbox('Show dataframe'):
