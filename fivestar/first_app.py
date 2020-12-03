@@ -183,7 +183,7 @@ avg_guests_accom = 55
 #
 
 # sliders for model
-slide_col_left, slide_col_mid, slide_col_right = st.beta_columns([2,3,2])
+slide_col_left, dummy_col1, slide_col_mid, dummy_col2, slide_col_right = st.beta_columns([2.,0.1,3.,0.15,2.])
 
 @st.cache(show_spinner=False)
 def get_cluster_averages(fs, cluster_id):
