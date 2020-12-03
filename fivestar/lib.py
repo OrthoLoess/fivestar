@@ -59,7 +59,7 @@ class FiveStar():
 
     def predict_on_new_values(self, listing_id, values={}):
         X_new = self.build_X(listing_id, values)
-        return self.model.predict(X_new)
+        return self.model.predict(X_new)[0]
 
 
 

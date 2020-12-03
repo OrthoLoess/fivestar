@@ -238,13 +238,21 @@ values = {
     'instant_bookable': inst_book,
     }
 
+old_score = fs.predict_on_new_values(listing_id)
 new_score = fs.predict_on_new_values(listing_id, values)
+average_score = listing_data['review_scores_rating']
+score_delta = new_score - old_score
+
+calculated_new = average_score + score_delta
 
 with slide_col_right:
     st.subheader('Review score impact')
     st.write('')
-    st.write('review score:', new_score)
-
+    st.write('original predicted review score:', old_score)
+    st.write('new predicted review score:', new_score)
+    st.write('difference between predictions:', score_delta)
+    st.write('original average review score:', average_score)
+    st.write('calculated new score prediction:', calculated_new)
 
 
 # checkbox functionality
