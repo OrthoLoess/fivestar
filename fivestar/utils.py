@@ -1,4 +1,5 @@
 import time
+import pandas as pd
 
 from fivestar.params import BOROUGHS, PRICES
 
@@ -47,6 +48,12 @@ def cancel_policy(listing_data):
         return 'Yes'
     return 'No'
 
+def get_ranking(series, value):
+    tmp = series.tolist()
+    tmp.append(value)
+    ranking = pd.Series(tmp).rank(method='min',ascending=False,pct=True).iloc[-1]
+    return ranking
+    
 def recode_cancel(n):
     if n in ('strict_14_with_grace_period','super_strict_30', 'super_strict_60', 'strict'):
         recode = 'strict'

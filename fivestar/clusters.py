@@ -94,8 +94,9 @@ def user_ranking(location, price, ptype, psize, listing_id, clusters, percentile
             ].reset_index()
     cluster['ranking'] = cluster['review_scores_rating'].rank(method='min',ascending=False,pct=True)
     cluster_average = cluster['review_scores_rating'].mean()
+
     user_rank =float(cluster[cluster['listing_id']== listing_id]['ranking'])
-    return user_rank, cluster_average
+    return user_rank, cluster_average, cluster['review_scores_rating']
 
 
 def get_cluster_ranking(location, price, ptype, psize, listing_id):
@@ -103,9 +104,9 @@ def get_cluster_ranking(location, price, ptype, psize, listing_id):
     # get clusters,listings etc
     clusters = get_data('clusters')
     #listings = get_data('listings')
-    cl_rank, cl_average = user_ranking(location, price, ptype, psize, listing_id, clusters)
+    cl_rank, cl_average, cl_scores = user_ranking(location, price, ptype, psize, listing_id, clusters)
 
-    return cl_rank, cl_average
+    return cl_rank, cl_average, cl_scores
 
 
 def top_rated(location, price, size, clusters, top=10, percentiles=CLUSTER_PERCENTILES):
