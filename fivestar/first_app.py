@@ -18,8 +18,12 @@ bedrooms_list = ['studio', '1', '2', '3+']
 price_list = ['£79 or less', '£80 - £99', '£100 - £119', '£120 - £139', '£140 or above' ]
 amenities_example = ['wifi', 'toaster', 'hangers', 'parking', 'sauna', 'swimming pool']
 
-fs = FiveStar()
+@st.cache(allow_output_mutation=True)
+def init_fivestar():
+    fs = FiveStar()
+    return fs
 
+fs = init_fivestar()
 
 # title
 st.title('Airbnb: 5 star predictor')
@@ -181,7 +185,11 @@ avg_guests_accom = 55
 # sliders for model
 slide_col_left, slide_col_mid, slide_col_right = st.beta_columns([1,2,1])
 
-cluster_averages = fs.get_cluster_averages(cluster_id)
+@st.cache(show_spinner=False)
+def get_cluster_averages(fs, cluster_id):
+    return fs.get_cluster_averages(cluster_id)
+
+cluster_averages = get_cluster_averages(fs, cluster_id)
 
 with slide_col_left:
     st.subheader('Averages for your group')
@@ -264,7 +272,7 @@ old_ranking =round(get_ranking(cl_scores, old_score)*100)
 new_ranking =round(get_ranking(cl_scores, new_score)*100)
 
 calculated_new = average_score + score_delta
-print(cl_scores)
+# print(cl_scores)
 with slide_col_right:
     st.subheader('Review score impact')
     st.write('')
