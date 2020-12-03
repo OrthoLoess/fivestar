@@ -51,10 +51,10 @@ st.write('')
 # map section
 map_col_left, map_col_right = st.beta_columns([1,3])
 with map_col_left:
-    sel1 = st.selectbox('Borough', borough_list)
+    sel1 = st.selectbox('Borough', borough_list, index=10)
     sel2 = st.selectbox('Property Type',ptype_list)
-    sel3 = st.selectbox('No. Bedrooms', bedrooms_list)
-    price = st.number_input('Price per night, £', min_value=50)
+    sel3 = st.selectbox('No. Bedrooms', bedrooms_list, index=2)
+    price = st.number_input('Price per night, £', value=120)
 
     if sel2 == 'Full property':
         sel2cat='Entire home/apt'
@@ -71,9 +71,9 @@ with map_col_left:
     map_one = get_cluster_coords(sel1, price, sel2cat, sel3cat)
 
     # plug values in below based on returned cluster
-    'Price cat: ', price_cat(price, CLUSTER_PERCENTILES[sel1]).replace('_', ' ')
+    'Price cat: ','"', price_cat(price, CLUSTER_PERCENTILES[sel1]).replace('_', ' '), '"'
     map_one.shape[0], 'listings'
-    '£',int(CLUSTER_PERCENTILES[sel1][4]), 'avg £/night'
+    '£',int(CLUSTER_PERCENTILES[sel1][4]), '(borough avg)'
 
 # hyperlink test
 #st.markdown("""<a href="https://www.google.com/">Google</a>""", unsafe_allow_html=True,)
@@ -106,9 +106,9 @@ st.write('Review scores vary depending on where your listing is and\
 st.write('')
 
 # I want to improve link
-if st.button('Yes! I want to improve'):
-    'Are you currently a host?'
-    host_select = st.selectbox('',['No, I am new to hosting', 'I am a host already'])
+# if st.button('Yes! I want to improve'):
+#     'Are you currently a host?'
+#     host_select = st.selectbox('',['No, I am new to hosting', 'I am a host already'])
 
 # Asking for listing ID and storing as 'listing_id'
 listing_id = st.text_input('What is your listing ID?',53242)
