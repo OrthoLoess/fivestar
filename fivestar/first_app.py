@@ -183,7 +183,7 @@ avg_guests_accom = 55
 #
 
 # sliders for model
-slide_col_left, slide_col_mid, slide_col_right = st.beta_columns([2,3,2])
+slide_col_left, dummy_col1, slide_col_mid, dummy_col2, slide_col_right = st.beta_columns([2.,0.1,3.,0.15,2.])
 
 @st.cache(show_spinner=False)
 def get_cluster_averages(fs, cluster_id):
@@ -193,23 +193,23 @@ cluster_averages = get_cluster_averages(fs, cluster_id)
 
 with slide_col_left:
     st.subheader('Averages for your group')
-    st.write(f"{cluster_averages['cancellation_policy']}% of listings have a strict cancellation policy")
+    st.write(f"{cluster_averages['cancellation_policy']:1.0f}% of listings have a strict cancellation policy")
     st.write('')
     st.write('')
     st.write('')
-    st.write(f"{cluster_averages['instant_bookable']}% of listings are instantly bookable")
+    st.write(f"{cluster_averages['instant_bookable']:1.0f}% of listings are instantly bookable")
     st.write('')
     st.write('')
     st.write('')
-    st.write(f"{cluster_averages['Wifi']}% of listings have wifi available")
+    st.write(f"{cluster_averages['Wifi']:1.0f}% of listings have wifi available")
     st.write('')
     st.write('')
     st.write('')
-    st.write(f"{cluster_averages['Breakfast']}% of listings have breakfast included")
+    st.write(f"{cluster_averages['Breakfast']:1.0f}% of listings have breakfast included")
     st.write('')
     st.write('')
     st.write('')
-    st.write(f"The average price of listings is {round(cluster_averages['price'])} £")
+    st.write(f"The average price of listings is £{round(cluster_averages['price'])}")
     st.write('')
     st.write('')
     st.write('')
@@ -227,12 +227,12 @@ with slide_col_mid:
     # st.write('')
 
     can_strict = st.select_slider(
-        'Strict cancellation policy (ie xx)',options=['No', 'Yes'], value=cancel_policy(listing_data))
+        'Strict cancellation policy',options=['No', 'Yes'], value=cancel_policy(listing_data))
     st.write('')
     #st.write('Strict cancellation policy:', can_strict)
 
     inst_book = st.select_slider(
-        'Instantly bookable (ie xx)',options=['No', 'Yes'], value='Yes' if listing_data['instant_bookable'] == 't' else 'No')
+        'Instantly bookable',options=['No', 'Yes'], value='Yes' if listing_data['instant_bookable'] == 't' else 'No')
     st.write('')
     #st.write('Instantly bookable:', inst_book)
 
