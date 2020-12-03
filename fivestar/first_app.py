@@ -4,29 +4,21 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
-from fivestar.clusters import get_cluster_coords, get_cluster_ranking, listing_to_cluster
+from fivestar.clusters import get_cluster_coords, get_cluster_ranking, listing_to_cluster, price_cat
 from fivestar.lib import FiveStar
 from fivestar.utils import str_to_price
 from fivestar.get_wordcloud import get_wordcloud
+from fivestar.params import BOROUGHS, CLUSTER_PERCENTILES
 
 
 # lists for select boxes (to be replaced by imported lists/params)
-borough_list = ['Hackney', 'Westminster', 'Wimbledon']
+borough_list = sorted(BOROUGHS)
 ptype_list = ['Apartment', 'Room']
 bedrooms_list = ['studio', '1', '2', '3+']
 price_list = ['£79 or less', '£80 - £99', '£100 - £119', '£120 - £139', '£140 or above' ]
 amenities_example = ['wifi', 'toaster', 'hangers', 'parking', 'sauna', 'swimming pool']
 
 fs = FiveStar()
-
-# test dataframes
-example_df = pd.DataFrame(
-         [3,2,7,5,5,3,4,5,3],
-         columns=['guests_to_accom'])
-
-example_df2 = pd.DataFrame([[51.531952,0.003723],[51.508758,-0.26343],
-    [51.490784,0.120272],[51.516887,-0.26769]],
-        columns=['lat', 'lon'])
 
 
 # title
@@ -58,15 +50,8 @@ with map_col_left:
     sel1 = st.selectbox('Borough', borough_list)
     sel2 = st.selectbox('Property Type',ptype_list)
     sel3 = st.selectbox('No. Bedrooms', bedrooms_list)
-    price = st.number_input('Price per night, £', min_value=20)
+    price = st.number_input('Price per night, £', min_value=50)
 
-    # plug values in below based on returned cluster
-    '5,000 listings'
-    '£120 avg price/night'
-
-
-
-with map_col_right:
     if sel2 == 'Apartment':
         sel2cat='Entire home/apt'
     else:
@@ -80,6 +65,29 @@ with map_col_right:
     else:
         sel3cat = 3
     map_one = get_cluster_coords(sel1, price, sel2cat, sel3cat)
+
+    # plug values in below based on returned cluster
+    'Price cat: ', price_cat(price, CLUSTER_PERCENTILES[sel1]).replace('_', ' ')
+    map_one.shape[0], 'listings'
+    '£',int(CLUSTER_PERCENTILES[sel1][4]), 'avg £/night'
+
+# hyperlink test
+#st.markdown("""<a href="https://www.google.com/">Google</a>""", unsafe_allow_html=True,)
+
+with map_col_right:
+    # if sel2 == 'Apartment':
+    #     sel2cat='Entire home/apt'
+    # else:
+    #     sel2cat='room'
+    # if sel3 == 'studio':
+    #     sel3cat = 0
+    # elif sel3 == '1':
+    #     sel3cat = 1
+    # elif sel3 == '2':
+    #     sel3cat = 2
+    # else:
+    #     sel3cat = 3
+    # map_one = get_cluster_coords(sel1, price, sel2cat, sel3cat)
     st.map(map_one)
 
 
@@ -117,28 +125,35 @@ cl_rank, cl_average = get_cluster_ranking(listing_data['neighbourhood_cleansed']
 st.write('')
 st.header('How you compare (vs similar group of properties)')
 rev_one, rev_two, rev_three = st.beta_columns(3)
+pink_colour = '#e3256b'
 with rev_one:
     st.write('')
     st.write('')
     st.write('')
-    st.markdown(f"<h2 style='text-align: center; color: #e3256b;'>Your review score: <strong>{round(listing_data['review_scores_rating']/20, 1)}</h1>",
+    st.markdown(f"<h2 style='text-align: center; color: black;'>Your review score: <strong>{round(listing_data['review_scores_rating']/20, 1)}</h1>",
      unsafe_allow_html=True)
 with rev_two:
     st.write('')
     st.write('')
     st.write('')
-    st.markdown(f"<h2 style='text-align: center; color: #e3256b;'>Group review score: <strong>{round(cl_average/20, 1)}</h1>",
+    st.markdown(f"<h2 style='text-align: center; color: black;'>Group review score: <strong>{round(cl_average/20, 1)}</h1>",
      unsafe_allow_html=True)
 with rev_three:
     st.write('')
     st.write('')
     st.write('')
-    st.markdown(f"<h2 style='text-align: center; color: #e3256b;'>You are in the bottom <strong>{abs(int(round(cl_rank*100,0))-100)}%</strong></h1>",
+    percentile = int(round(cl_rank*100,0))
+    if percentile <= 50:
+        st.markdown(f"<h2 style='text-align: center; color: green;'>You are in the top <strong>{percentile}%</strong></h1>",
+     unsafe_allow_html=True)
+    else:
+        st.markdown(f"<h2 style='text-align: center; color: red;'>You are in the bottom <strong>{percentile}%</strong></h1>",
      unsafe_allow_html=True)
 
 st.write('')
 st.write('')
 st.header('What the top listings in your group offer')
+st.write('')
 
 fig, ax = plt.subplots()
 ax.imshow(cloud, interpolation="bilinear")
