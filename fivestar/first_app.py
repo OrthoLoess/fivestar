@@ -109,7 +109,7 @@ cluster_id = listing_to_cluster(listing_id)
 cloud = get_wordcloud(cluster_id)
 
 
-cl_rank, cl_average = get_cluster_ranking(listing_data['neighbourhood_cleansed'],str_to_price(listing_data['price']), \
+cl_rank, cl_average, cl_scores = get_cluster_ranking(listing_data['neighbourhood_cleansed'],str_to_price(listing_data['price']), \
     listing_data['room_type'], listing_data['bedrooms'], listing_id)
 # print(listing)
 
