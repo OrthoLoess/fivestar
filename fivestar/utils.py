@@ -43,17 +43,37 @@ def house_prices(data):
     return data[['mean_house_prices']]
 
 def cancel_policy(listing_data):
-    def recode_cancel(n):
-        if n in ('strict_14_with_grace_period','super_strict_30', 'super_strict_60', 'strict'):
-            recode = 'strict'
-        elif n in ('moderate','flexible'):
-            recode = n
-        else:
-            recode = 'Other'
-        return recode
     if recode_cancel(listing_data['cancellation_policy']) == 'strict':
         return 'Yes'
     return 'No'
+
+def recode_cancel(n):
+    if n in ('strict_14_with_grace_period','super_strict_30', 'super_strict_60', 'strict'):
+        recode = 'strict'
+    elif n in ('moderate','flexible'):
+        recode = n
+    else:
+        recode = 'Other'
+    return recode
+
+def has_wifi(str):
+    if 'Wifi' in str:
+        return 1
+    return 0
+
+def has_breakfast(str):
+    if 'Breakfast' in str:
+        return 1
+    return 0
+
+
+def cancel_policy_is_strict(cancel_entry):
+    if recode_cancel(cancel_entry) == 'strict':
+        return 1
+    return 0
+
+def is_instant_bookable(tf):
+    return 1 if tf == 't' else 0
 
 
 ################
