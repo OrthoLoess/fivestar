@@ -127,8 +127,8 @@ cl_rank, cl_average, cl_scores = get_cluster_ranking(listing_data['neighbourhood
 
 # display information boxes depending on cluster and listing id
 st.write('')
-st.header('How you compare (vs similar group of properties)')
-rev_one, rev_two, rev_three = st.beta_columns(3)
+st.header('How you compare with your competitors')
+rev_one, rev_two, rev_three = st.beta_columns([1,2,1])
 pink_colour = '#e3256b'
 with rev_one:
     st.write('')
@@ -140,7 +140,7 @@ with rev_two:
     st.write('')
     st.write('')
     st.write('')
-    st.markdown(f"<h2 style='text-align: center; color: black;'>Group review score: <strong>{round(cl_average/20, 1)}</h1>",
+    st.markdown(f"<h2 style='text-align: center; color: black;'>Similar poroperties review score: <strong>{round(cl_average/20, 1)}</h1>",
      unsafe_allow_html=True)
 with rev_three:
     st.write('')
@@ -271,7 +271,7 @@ average_score = listing_data['review_scores_rating']
 score_delta = new_score - old_score
 old_ranking =(get_ranking(cl_scores, old_score)*100)
 new_ranking =(get_ranking(cl_scores, new_score)*100)
-ranking_delta= int(round(new_ranking - old_ranking))
+ranking_delta= int(round(old_ranking - new_ranking))
 
 calculated_new = average_score + score_delta
 star_shift = round(score_delta / 20, 2)
@@ -289,9 +289,10 @@ with slide_col_right:
     #st.write('calculated new score prediction:', calculated_new)
     st.write('')
     if ranking_delta <= 0:
-        st.write(f'Your ranking in the group of similar listings has improved by {abs(ranking_delta)}%!')
+        st.markdown(f"Your ranking in the group of similar listings has changed by {ranking_delta} % :confused: ")
     else:
-        st.write(f'Your ranking in the group of similar listings has worsened by {abs(ranking_delta)}%!')
+        st.markdown(f"Your ranking in the group of similar listings has changed by {ranking_delta} % :smiley: ")
+
 
     #st.write('New ranking:', new_ranking, '%')
 # checkbox functionality
