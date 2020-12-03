@@ -74,10 +74,11 @@ LISTINGS_COLUMNS = ['id',
 
 KEY_AMENITIES = [['Free parking on premises', 'free street parking',
                   'paid parking on premises' ,'paid parking off premises'],
-                'Dryer','Wifi','Breakfast',
-                'Indoor fireplace',
-                ['TV', 'cable tv'],
-                ['Smoke alarm','Smoke detector']]
+                'Wifi', 'Breakfast'
+                # 'Indoor fireplace',
+                # ['TV', 'cable tv'],
+                # ['Smoke alarm','Smoke detector']
+                ]
 
 PRICES = [950760, 301518,667593,357779,578705,502623,1099876,399645,
          578110,463806,462820,614955,972231,683987,527206,387535,
@@ -125,3 +126,7 @@ CLUSTER_PERCENTILES = {'Lambeth': [33.0, 40.0, 50.0, 60.0, 70.0, 85.0, 100.0, 12
              'Sutton': [24.9, 28.0, 31.0, 35.0, 44.5, 50.0, 56.19999999999999, 65.4, 85.0]
              }
 
+COLUMNS = ['parking', 'wifi', 'breakfast', 'amenity_count', 'instant_bookable',
+            'host_identity_verified', 'price_ratio', 'listing_count', 'cancellation',
+                            'response_rate', 'room_ratio', 'cleanliness_delta',
+                            'room_type']

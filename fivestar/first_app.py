@@ -1,11 +1,10 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-from wordcloud import WordCloud
 import matplotlib.pyplot as plt
+from wordcloud import WordCloud
 
 from fivestar.clusters import get_cluster_coords, get_cluster_ranking, listing_to_cluster
-from fivestar.lib import get_listing
 from fivestar.lib import FiveStar
 from fivestar.utils import str_to_price
 from fivestar.get_wordcloud import get_wordcloud
@@ -193,9 +192,9 @@ with slide_col_left:
 with slide_col_mid:
     st.subheader('Change your offering')
 
-    guests_accom = st.slider('Guests to accommodate', 0, 16, avg_guests_accom)
-    st.write(guests_accom, 'guests')
-    st.write('')
+    # guests_accom = st.slider('Guests to accommodate', 0, 16, avg_guests_accom)
+    # st.write(guests_accom, 'guests')
+    # st.write('')
 
     can_strict = st.select_slider(
         'Strict cancellation policy (ie xx)',options=['No', 'Yes'])
@@ -207,17 +206,17 @@ with slide_col_mid:
     st.write('')
     #st.write('Instantly bookable:', inst_book)
 
-    host_listings_count = st.slider('No of other listings', 0, 16, 1)
-    st.write(host_listings_count + 1, 'listings in total')
-    st.write('')
+    # host_listings_count = st.slider('No of other listings', 0, 16, 1)
+    # st.write(host_listings_count + 1, 'listings in total')
+    # st.write('')
 
-    type_entire = st.select_slider(
-        'Entire flat (vs private room)',options=['No', 'Yes'])
-    st.write('')
+    # type_entire = st.select_slider(
+    #     'Entire flat (vs private room)',options=['No', 'Yes'])
+    # st.write('')
 
-    parking = st.select_slider(
-        'Free parking on premises',options=['No', 'Yes'])
-    st.write('')
+    # parking = st.select_slider(
+    #     'Free parking on premises',options=['No', 'Yes'])
+    # st.write('')
 
     wifi = st.select_slider(
         'Wifi available',options=['No', 'Yes'])
@@ -227,13 +226,13 @@ with slide_col_mid:
         'Breakfast included',options=['No', 'Yes'])
     st.write('')
 
-    host_resp_rate = st.select_slider(
-        'Response to questions',options=['Never', 'When I can', 'As much as possible'])
-    st.write('')
+    # host_resp_rate = st.select_slider(
+    #     'Response to questions',options=['Never', 'When I can', 'As much as possible'])
+    # st.write('')
 
-    host_identity = st.select_slider(
-        'Host identity verified',options=['No', 'Yes'])
-    st.write('')
+    # host_identity = st.select_slider(
+    #     'Host identity verified',options=['No', 'Yes'])
+    # st.write('')
 
     price_ratio = st.slider('Price adjustor, £', 0, 250, price)
     st.write('£', price_ratio, )
@@ -243,16 +242,27 @@ with slide_col_mid:
     st.write('Expected standard of cleanliness:', cleanliness_delta )
     st.write('')
 
-    amenity_options = st.multiselect('Amenities offered',
-        amenities_example)
-    st.write(len(amenity_options), 'amenities offered')
-    st.write('')
-
+    # amenity_options = st.multiselect('Amenities offered',
+    #     amenities_example)
+    # st.write(len(amenity_options), 'amenities offered')
+    # st.write('')
+values = {
+    'price': price_ratio,
+    'cancellation_policy': can_strict,
+    'Wifi': wifi,
+    'Breakfast': breakfast,
+    'review_scores_cleanliness': cleanliness_delta,
+    'instant_bookable': inst_book,
+    }
+print('These values are coming directly from streamlit:', values)
+new_score = fs.predict_on_new_values(listing_id, values)
 
 with slide_col_right:
     st.subheader('Review score impact')
     st.write('')
-    st.write('review score:', '+0.4')
+    st.write('review score:', new_score)
+
+
 
 # checkbox functionality
 

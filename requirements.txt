@@ -18,3 +18,4 @@ mlflow
 memoized_property
 psutil
 termcolor
+wordcloud
