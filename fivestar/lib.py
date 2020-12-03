@@ -57,36 +57,15 @@ class FiveStar():
         coefs_dict = {k:v for k,v in zip(COLUMNS,coefs)}
         return coefs_dict
 
-    def predict_on_new_values(self, listing_id, values):
-        # print('These are the values coming in from predict on new values: ', values)
+    def predict_on_new_values(self, listing_id, values={}):
         X_new = self.build_X(listing_id, values)
-        # print(X_new)
-        return self.model.predict(X_new)
-
-    # def build_X(self, listing_id, values):
-    #     listing_int = int(listing_id)
-    #     listing = self.listings[self.listings['id'] == listing_int].copy()
-    #     print(listing)
-    #     if values:
-    #         for key, value in values.items():
-    #             if key == 'cancellation_policy':
-    #                 listing['cancellation_policy'] = 'strict' if values['cancellation_policy'] == 'Yes' else 'Other'
-    #             if key == 'Wifi' or key == 'Breakfast':
-    #                 if value == 'No':
-    #                     listing['amenities'] = listing['amenities'].replace(f'key,','')
-    #                 elif key not in listing['amenities']:
-    #                     listing['amenities'] = '{' + key + listing.iloc[0,'amenities'][1:]
-    #             if key == 'instant_bookable':
-    #                 listing[key] = 't' if value == 'Yes' else 'f'
-    #             else:
-    #                 listing[key] = value
+        return self.model.predict(X_new)[0]
 
 
-    #     return listing
 
     def build_X(self, listing_id, values):
         listing_attributes = self.get_listing(listing_id)
-        # print(values)
+
         for key, value in values.items():
             if key == 'cancellation_policy':
                 listing_attributes[key] = 'strict' if value == 'Yes' else 'Other'
@@ -95,14 +74,10 @@ class FiveStar():
             elif key == 'Wifi' or key == 'Breakfast':
                 if value == 'Yes' and key not in listing_attributes['amenities']:
                     listing_attributes['amenities'] = listing_attributes['amenities'][:-1] + f',{key}' + '}'
-            # elif key == 'Breakfast':
-            #     if value == 'Yes' and key not in listing_attributes['amenities']:
-            #         listing_attributes['amenities'] = listing_attributes['amenities'][:-1] + f',{key}' + '}'
                 elif value == 'No':
                     listing_attributes['amenities'] = listing_attributes['amenities'].replace(f',{key}', '')
             else:
                 listing_attributes[key] = value
-        # print(listing_attributes['amenities'])
 
         listing_for_df = {k:[v] for k,v in listing_attributes.items()}
 
