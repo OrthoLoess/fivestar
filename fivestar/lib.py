@@ -10,6 +10,7 @@ import datetime
 from fivestar.data import get_data
 from fivestar.params import COLUMNS
 from fivestar.model import Model
+from fivestar.utils import str_to_price, has_wifi, has_breakfast, cancel_policy_is_strict, is_instant_bookable
 
 pd.set_option('display.width', 200)
 
@@ -19,11 +20,33 @@ class FiveStar():
         self.listings = get_data()
         self.clusters = get_data('clusters')
         self.model = Model().load_model()
+        self.build_cluster_info()
 
 
+    def build_cluster_info(self):
+        clusters = self.clusters.set_index('listing_id').join(
+            self.listings.set_index('id')[['price','review_scores_cleanliness',
+                                            'amenities','instant_bookable',
+                                            'cancellation_policy']])
+        clusters['price'] = clusters['price'].map(str_to_price)
+        clusters['Wifi'] = clusters['amenities'].map(has_wifi)
+        clusters['Breakfast'] = clusters['amenities'].map(has_breakfast)
+        clusters['instant_bookable'] = clusters['instant_bookable'].map(is_instant_bookable)
+        clusters['cancellation_policy'] = clusters['cancellation_policy'].map(cancel_policy_is_strict)
+
+        avgs_per_cluster = clusters.groupby('cluster')[['price','review_scores_cleanliness']].mean()
+        cluster_groups = clusters.groupby('cluster')[['Wifi','Breakfast','instant_bookable','cancellation_policy']]
+        rates_per_cluster = np.round(100 * cluster_groups.sum() / cluster_groups.count())
+        self.cluster_info = avgs_per_cluster.join(rates_per_cluster)
+
+    def get_cluster_id(self, listing_id):
+        return self.clusters[self.clusters['listing_id'] == listing_id]['cluster'].values[0]
+
+    def get_cluster_averages(self, cluster_id):
+        return self.cluster_info.loc[cluster_id].to_dict()
 
     def get_listing(self, listing_id):
-        """Look up full info for an id and return it as a dict???"""
+        """Look up full info for an id and return it as a dict"""
         # print(self.listings.shape)
         listings = self.listings
         columns_to_keep = ['review_scores_accuracy',
@@ -37,19 +60,11 @@ class FiveStar():
              'host_listings_count', 'cancellation_policy',
              'host_response_rate', 'accommodates', 'bedrooms', 'room_type',
              ]
-        # print(listings)
+
         if listing_id:
             self.current_listing = listing_id
             data = listings[listings['id'] == int(listing_id)].to_dict('records')
             return data[0]
-        #     if type(data) == 'list' and len(data) > 0:
-        #         data = data[0]
-        #     else:
-        #         data = {}
-        # else:
-        #     data = {}
-        # # print(data)
-        # return data
 
 
     def get_coef_dict(self):
@@ -84,18 +99,10 @@ class FiveStar():
         return pd.DataFrame.from_dict(listing_for_df)
 
 
-def clean_data(data):
-    """ clean data
-    """
-
-    return data
 
 
-# def get_listing(listing_id):
-#     """Look up full info for an id and return it as a dict???"""
-#     listings = get_data()
-#     data = listings.loc[listing_id].to_dict('records')[0]
-#     return data
+
+
 
 
 if __name__ == '__main__':
