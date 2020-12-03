@@ -39,9 +39,14 @@ class FiveStar():
         rates_per_cluster = np.round(100 * cluster_groups.sum() / cluster_groups.count())
         self.cluster_info = avgs_per_cluster.join(rates_per_cluster)
 
+    def get_cluster_id(self, listing_id):
+        return self.clusters[self.clusters['listing_id'] == listing_id]['cluster'].values[0]
+
+    def get_cluster_averages(self, cluster_id):
+        return self.cluster_info.loc[cluster_id].to_dict()
 
     def get_listing(self, listing_id):
-        """Look up full info for an id and return it as a dict???"""
+        """Look up full info for an id and return it as a dict"""
         # print(self.listings.shape)
         listings = self.listings
         columns_to_keep = ['review_scores_accuracy',
@@ -60,7 +65,6 @@ class FiveStar():
             self.current_listing = listing_id
             data = listings[listings['id'] == int(listing_id)].to_dict('records')
             return data[0]
-
 
 
     def get_coef_dict(self):

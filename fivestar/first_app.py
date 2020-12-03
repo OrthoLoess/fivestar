@@ -165,11 +165,14 @@ avg_guests_accom = int(round(example_df['guests_to_accom'].mean(),0))
 
 # sliders for model
 slide_col_left, slide_col_mid, slide_col_right = st.beta_columns([1,2,1])
+
+cluster_averages = fs.get_cluster_averages(cluster_id)
+
 with slide_col_left:
     st.subheader('Averages for your group')
     st.write('')
     st.write('')
-    st.write(avg_guests_accom, 'avg guests')
+    st.write(f"{cluster_averages['cancellation_policy']}% of listings in this group have a strict cancellation policy")
     st.write('')
     st.write('')
     st.write('')
