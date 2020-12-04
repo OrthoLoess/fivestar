@@ -22,7 +22,7 @@ class FiveStar():
         self.model = Model().load_model()
         self.build_cluster_info()
 
-    @st.cache(show_spinner=False)
+    @st.cache(show_spinner=False, persist=True)
     def build_cluster_info(self):
         clusters = self.clusters.set_index('listing_id').join(
             self.listings.set_index('id')[['price','review_scores_cleanliness',
@@ -71,7 +71,7 @@ class FiveStar():
         coefs_dict = {k:v for k,v in zip(COLUMNS,coefs)}
         return coefs_dict
 
-    @st.cache(show_spinner=False)
+    @st.cache(show_spinner=False, persist=True)
     def predict_on_new_values(self, listing_id, values={}):
         X_new = self.build_X(listing_id, values)
         return self.model.predict(X_new)[0]

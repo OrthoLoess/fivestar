@@ -18,7 +18,7 @@ bedrooms_list = ['studio', '1', '2', '3+']
 price_list = ['£79 or less', '£80 - £99', '£100 - £119', '£120 - £139', '£140 or above' ]
 amenities_example = ['wifi', 'toaster', 'hangers', 'parking', 'sauna', 'swimming pool']
 
-@st.cache(allow_output_mutation=True)
+@st.cache(allow_output_mutation=True, persist=True)
 def init_fivestar():
     fs = FiveStar()
     return fs
@@ -185,7 +185,7 @@ avg_guests_accom = 55
 # sliders for model
 slide_col_left, dummy_col1, slide_col_mid, dummy_col2, slide_col_right = st.beta_columns([2.,0.1,3.,0.15,2.])
 
-@st.cache(show_spinner=False)
+@st.cache(show_spinner=False, persist=True)
 def get_cluster_averages(fs, cluster_id):
     return fs.get_cluster_averages(cluster_id)
 
