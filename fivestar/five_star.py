@@ -112,10 +112,10 @@ st.write('')
 
 # Asking for listing ID and storing as 'listing_id'
 listing_id = st.text_input('What is your listing ID?',53242)
-st.write('Your listing ID is', listing_id)
+
 listing_id = int(listing_id)
 listing_data = fs.get_listing(listing_id)
-
+st.write('Your property is a', listing_data['room_type'], 'in', listing_data['neighbourhood_cleansed'])
 cluster_id = listing_to_cluster(listing_id)
 #wordcount = pd.read_csv('data/jan/word_counts2.csv')
 cloud = get_wordcloud(cluster_id)
