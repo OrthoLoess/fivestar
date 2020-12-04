@@ -127,7 +127,7 @@ cl_rank, cl_average, cl_scores = get_cluster_ranking(listing_data['neighbourhood
 
 # display information boxes depending on cluster and listing id
 st.write('')
-st.header('How you compare with your competitors')
+st.header('How you compare with your competitors:')
 rev_one, rev_two, rev_three = st.beta_columns([1,2,1])
 pink_colour = '#e3256b'
 with rev_one:
@@ -140,7 +140,7 @@ with rev_two:
     st.write('')
     st.write('')
     st.write('')
-    st.markdown(f"<h2 style='text-align: center; color: black;'>Similar poroperties review score: <strong>{round(cl_average/20, 1)}</h1>",
+    st.markdown(f"<h2 style='text-align: center; color: black;'>Similar properties review score: <strong>{round(cl_average/20, 1)}</h1>",
      unsafe_allow_html=True)
 with rev_three:
     st.write('')
@@ -156,7 +156,7 @@ with rev_three:
 
 st.write('')
 st.write('')
-st.header('What the top listings in your group offer')
+st.header('What the top listings in your group offer:')
 st.write('')
 
 fig, ax = plt.subplots()
@@ -192,26 +192,32 @@ def get_cluster_averages(fs, cluster_id):
 cluster_averages = get_cluster_averages(fs, cluster_id)
 left_col_spacing = '<br>'
 with slide_col_left:
-    st.subheader('Averages for your group')
+    st.subheader('Averages for similar properties')
     st.write(f"The average cleaning standard of listings is {round(cluster_averages['review_scores_cleanliness'])}")
     st.markdown(left_col_spacing,
         unsafe_allow_html=True)
+    st.write('')
 
     st.write(f"{cluster_averages['Breakfast']:1.0f}% of listings have breakfast included")
     st.markdown(left_col_spacing,
         unsafe_allow_html=True)
+    st.write('')
+    st.write('')
 
     st.write(f"{cluster_averages['cancellation_policy']:1.0f}% of listings have a strict cancellation policy")
     st.markdown(left_col_spacing,
         unsafe_allow_html=True)
+    st.write('')
 
     st.write(f"{cluster_averages['instant_bookable']:1.0f}% of listings are instantly bookable")
     st.markdown(left_col_spacing,
         unsafe_allow_html=True)
+    st.write('')
 
     st.write(f"The average price of listings is £{round(cluster_averages['price'])}")
     st.markdown(left_col_spacing,
         unsafe_allow_html=True)
+    st.write('')
 
     st.write(f"{cluster_averages['Wifi']:1.0f}% of listings have wifi available")
 
@@ -233,6 +239,7 @@ with slide_col_mid:
     breakfast = st.select_slider(
         'Breakfast included',options=['No', 'Yes'], value='Yes' if 'Breakfast' in listing_data['amenities'] else 'No')
     st.write('')
+
 
     can_strict = st.select_slider(
         'Strict cancellation policy',options=['No', 'Yes'], value=cancel_policy(listing_data))
