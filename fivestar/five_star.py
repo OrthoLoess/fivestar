@@ -26,7 +26,10 @@ def init_fivestar():
 fs = init_fivestar()
 
 # title
-st.title('Airbnb: 5 star predictor')
+#st.title('Airbnb: 5 star predictor')
+st.markdown(f"<h1 style='text-align: left; color: rgb(255, 90, 95);'> Airbnb: 5 star predictor</h1>",
+     unsafe_allow_html=True)
+
 st.write('')
 st.write('')
 
@@ -40,7 +43,9 @@ with city_col_right:
 
 'You are a',opt1.upper(),'in', opt2, '!'
 st.write('')
-st.header('Tell us about your property')
+#st.header('Tell us about your property')
+st.markdown(f"<h2 style='text-align: left; color: rgb(255, 90, 95);'> Tell us about your property</h1>",
+    unsafe_allow_html=True)
 st.write('')
 st.write('')
 
@@ -98,7 +103,9 @@ with map_col_right:
 # review scores are important
 st.write('')
 st.write('')
-st.header('Review scores are important')
+#st.header('Review scores are important')
+st.markdown(f"<h2 style='text-align: left; color: rgb(255, 90, 95);'> Review scores are important</h1>",
+    unsafe_allow_html=True)
 st.write('')
 st.write('Review scores vary depending on where your listing is and\
     what the attributes of your listing are.' ' Do you want to know\
@@ -115,7 +122,8 @@ listing_id = st.text_input('What is your listing ID?',53242)
 
 listing_id = int(listing_id)
 listing_data = fs.get_listing(listing_id)
-st.write('Your property is a', listing_data['room_type'], 'in', listing_data['neighbourhood_cleansed'])
+st.markdown(f"Your property is listed as: ** _{listing_data['name']}_ **")
+
 cluster_id = listing_to_cluster(listing_id)
 #wordcount = pd.read_csv('data/jan/word_counts2.csv')
 cloud = get_wordcloud(cluster_id)
@@ -127,7 +135,9 @@ cl_rank, cl_average, cl_scores = get_cluster_ranking(listing_data['neighbourhood
 
 # display information boxes depending on cluster and listing id
 st.write('')
-st.header('How you compare with your competitors:')
+#st.header('How you compare with your competitors:')
+st.markdown(f"<h2 style='text-align: left; color: rgb(255, 90, 95);'> How you compare with your competitors:</h1>",
+    unsafe_allow_html=True)
 rev_one, rev_two, rev_three = st.beta_columns([1,2,1])
 pink_colour = '#e3256b'
 with rev_one:
@@ -156,7 +166,9 @@ with rev_three:
 
 st.write('')
 st.write('')
-st.header('What the top listings in your group offer:')
+#st.header('What the top listings in your group offer:')
+st.markdown(f"<h2 style='text-align: left; color: rgb(255, 90, 95);'> What the top listings in your group offer:</h1>",
+    unsafe_allow_html=True)
 st.write('')
 
 fig, ax = plt.subplots()
@@ -171,8 +183,9 @@ st.pyplot(fig)
 
 # sliders for model section
 st.write('')
-st.header('How you can shift your review score')
-
+#st.header('How you can shift your review score')
+st.markdown(f"<h2 style='text-align: left; color: rgb(255, 90, 95);'> How you can shift your review score:</h1>",
+    unsafe_allow_html=True)
 # avgs for cluster
 avg_guests_accom = 55
 #
@@ -289,16 +302,16 @@ with slide_col_right:
     #st.write('original predicted review score:', old_score)
     #st.write('new predicted review score:', new_score)
     if star_shift < 0:
-        st.markdown(f'Your review score has gone down by <span style="color:red">{0 - star_shift}</span> stars!', unsafe_allow_html=True)
+        st.markdown(f'Your review score has gone down by **<span style="color:red">{0 - star_shift}</span> stars!**', unsafe_allow_html=True)
     else:
-        st.markdown(f'Your review score has increased by <span style="color:green">{star_shift}</span> stars!', unsafe_allow_html=True)
+        st.markdown(f'Your review score has increased by **<span style="color:green">{star_shift}</span> stars!**', unsafe_allow_html=True)
     #st.write('original average review score:', average_score)
     #st.write('calculated new score prediction:', calculated_new)
     st.write('')
     if ranking_delta <= 0:
-        st.markdown(f"Your ranking in the group of similar listings has changed by {ranking_delta} % :confused: ")
+        st.markdown(f"Your ranking in the group of similar listings has changed by **{ranking_delta} % ** :confused: ")
     else:
-        st.markdown(f"Your ranking in the group of similar listings has changed by {ranking_delta} % :smiley: ")
+        st.markdown(f"Your ranking in the group of similar listings has changed by **{ranking_delta} % ** :smiley: ")
 
 
     #st.write('New ranking:', new_ranking, '%')
