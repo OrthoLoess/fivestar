@@ -17,3 +17,4 @@ star-project-key.json
 eggs/
 .eggs/
 *.egg
+__pycache__/

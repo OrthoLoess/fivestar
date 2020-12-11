@@ -58,3 +58,10 @@ pypi_test:
 
 pypi:
 	@twine upload dist/* -u lologibus2
+
+# ----------------------------------
+#      RUN STREAMLIT
+# ----------------------------------
+
+run_streamlit:
+    streamlit run fivestar/five_star.py
