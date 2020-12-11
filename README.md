@@ -1,11 +1,13 @@
 # Project Overview
 
+[Fivestar app - Heroku](https://fivestar-app.herokuapp.com/)
+
 The goal of the project was to explore Airbnb listings in London, from a host’s perspective, and predict guest review scores based on a certain property's attributes.
 The goal of the project was to explore Airbnb listings in London, from a host’s perspective, and predict guest review scores based on their property's attributes.
 
 Ultimately this may just have the potential to become the one-stop shop tool for an Airbnb host when managing and optimising their listing offering (...maybe!).
 
-Data source: [Inside Airbnb](http://insideairbnb.com/)<br>
+Data source: [Inside Airbnb](http://insideairbnb.com/)
 
 Status - completed (version 1)
 
