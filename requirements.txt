@@ -19,3 +19,4 @@ memoized_property
 psutil
 termcolor
 wordcloud
+streamlit==0.71.0

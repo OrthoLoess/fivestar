@@ -15,3 +15,4 @@ setup(name='FiveStar',
       include_package_data=True,
       scripts=['scripts/fivestar-run'],
       zip_safe=False)
+
