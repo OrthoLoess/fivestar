@@ -1,10 +1,11 @@
 # Project Overview
 
 The goal of the project was to explore Airbnb listings in London, from a host’s perspective, and predict guest review scores based on a certain property's attributes.
+The goal of the project was to explore Airbnb listings in London, from a host’s perspective, and predict guest review scores based on their property's attributes.
 
-Ultimately this may just have the potential to become the one-stop shop tool for an Airbnb host when managing and optimising their listing offering.
+Ultimately this may just have the potential to become the one-stop shop tool for an Airbnb host when managing and optimising their listing offering (...maybe!).
 
-Data source: Inside Airbnb
+Data source: [Inside Airbnb](http://insideairbnb.com/)<br>
 
 Status - completed (version 1)
 
@@ -15,24 +16,24 @@ Elsa Lebrun-Grandie - [GH profile](https://github.com/ElsaLGF)<br>
 Leone Cavicchia - [GH profile](https://github.com/leoncav)
 
 ## Methods
-Data exploration<br>
-Inferential statistics<br>
-Data visualisation<br>
-Machine learning/predictive modelling<br>
-Natural Language Processing<br>
-App user interface design
+- Data exploration<br>
+- Inferential statistics<br>
+- Data visualisation<br>
+- Machine learning/predictive modelling<br>
+- Natural Language Processing<br>
+- App user interface design
 
 ## Tech
-SQL<br>
-Python (Jupyter)<br>
-Pandas<br>
-Numpy<br>
-Matplotlib<br>
-Seaborn<br>
-Scikit Learn<br>
-NLTK<br>
-Miro Scratchpad<br>
-Streamlit / HTML
+- SQL<br>
+- Python (Jupyter)<br>
+- Pandas<br>
+- Numpy<br>
+- Matplotlib<br>
+- Seaborn<br>
+- Scikit-Learn<br>
+- NLTK<br>
+- Miro Scratchpad<br>
+- Streamlit / HTML
 
 # Project Description
 - Inspired by the wealth of data provided by Inside Airbnb, we chose to explore a listing’s review score and its relationship to the features that a property offers its guests
@@ -45,7 +46,11 @@ Streamlit / HTML
 - The final linear regression model used a set of features chosen to minimise multicollinearity. It used l2 regularisation to help control overfitting on the training set.
 - Finally, all of this led to the creation of an interactive front end that would provide information about a host’s listing, the group a host belonged to and how the most influential features could be dialled up or down to positively, or negatively, affect the review score.
 
-
+# What's next?
+Initially we constrained ourselves to creating an MVP, get it live and receive user feedback. However, during version one, there were many other avenues parked for the roadmap.
+- Expand to other cities, exploring any different relationships between attributes and review scores
+- Offer the service to new hosts, who haven't yet defined their offering or price/night, to help gauge where to pitch their property
+- Refine the selection and combination of features that feed the model, to strengthen the prediction
 
 # Startup the project
 
